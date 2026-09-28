@@ -1,0 +1,27 @@
+{
+  "name": "pereira-ui-monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm --filter @pereira-ui/react build && pnpm --filter playground build",
+    "dev": "pnpm --filter @pereira-ui/react build && pnpm --filter playground dev",
+    "lint": "eslint .",
+    "typecheck": "pnpm -r typecheck",
+    "tokens": "pnpm --filter @pereira-ui/react tokens",
+    "ds": "pnpm --filter @pereira-ui/react build && node scripts/build-ds.mjs",
+    "check": "pnpm lint && pnpm build && pnpm typecheck && node scripts/build-ds.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.39.0",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "globals": "^16.0.0",
+    "typescript": "~5.9.0",
+    "typescript-eslint": "^8.46.0"
+  }
+}

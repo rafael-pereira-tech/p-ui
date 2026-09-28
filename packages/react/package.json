@@ -1,0 +1,58 @@
+{
+  "name": "@pereira-ui/react",
+  "version": "0.1.0",
+  "description": "Pereira UI — shadcn/ui components with Neutral/Zinc/Stone themes and Blue/Orange accents, for React 19 and Tailwind CSS v4.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "sideEffects": ["*.css"],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+    },
+    "./styles.css": "./styles/index.css",
+    "./tokens.css": "./styles/tokens.css",
+    "./accents.css": "./styles/accents.css",
+    "./theme.css": "./styles/theme.css",
+    "./fonts.css": "./styles/fonts.css",
+    "./compiled.css": "./dist/pereira-ui.css",
+    "./tokens.json": "./tokens.json",
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "styles", "fonts", "tokens.json", "README.md"],
+  "scripts": {
+    "tokens": "node scripts/build-tokens.mjs",
+    "build": "node scripts/build-tokens.mjs && tsup && node scripts/build-css.mjs",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "cmdk": "^1.1.1",
+    "cn": "^0.2.4",
+    "lucide-react": "0.474.0",
+    "next-themes": "0.4.6",
+    "radix-ui": "^1.4.3",
+    "sonner": "^2.0.0",
+    "tw-animate-css": "^1.4.0",
+    "vaul": "1.1.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwindcss": "^4.3.0",
+    "tsup": "^8.5.0",
+    "typescript": "~5.9.0"
+  },
+  "publishConfig": { "access": "restricted" },
+  "repository": { "type": "git", "url": "git+https://github.com/rafael-pereira-tech/pereira-ui.git", "directory": "packages/react" }
+}

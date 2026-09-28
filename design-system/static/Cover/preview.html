@@ -1,0 +1,75 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pereira UI</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--background); color:var(--foreground); font-family:var(--font-heading); overflow:hidden; }
+  .cover { position:relative; width:960px; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:0; width:960px; height:288px; }
+  .ink { fill:var(--primary); }
+  .blue { fill:var(--blue-primary); }
+  .orange { fill:var(--orange-primary); }
+  .tint { fill:var(--input); }
+  .knob { fill:var(--primary-foreground); }
+  .dot { fill:var(--muted-foreground); }
+  .tile { rx:var(--radius-xl); }
+  .words { position:absolute; left:var(--space-8); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-size:104px; line-height:.95; font-weight:600; letter-spacing:-.025em; color:var(--foreground); }
+  .tag { margin:var(--space-3) 0 0 4px; font-family:var(--font-sans); font-size:14px; line-height:20px; color:var(--muted-foreground); }
+</style>
+</head>
+<body>
+<div class="cover">
+<svg class="art" viewBox="0 0 960 288" width="960" height="288" aria-hidden="true">
+<!--
+  blocks      primary 176×240 slab (the grey-first identity, largest) · blue-primary 264×112 · orange-primary 112×120 · input 144×120 tint (muted vanished on white) — ≈32% of 960×288; destructive left out (a state, not identity)
+  arrangement a flush modular grid like a dashboard of Cards: one tall slab with a wide and two square satellites, space-2 gutters, top and bottom on space-6
+  pattern     tiles cut by radius-xl (geometric, modular, dense UI: Cards are radius-xl), plus a dot grid at space-5 pitch in muted-foreground inside the input tint — "precise, hairline, 4px grid"; one Switch-thumb disc in primary-foreground on the slab
+  scales      gutters space-2 (8px); sides multiples of space-2; corners radius-xl; dot pitch 20px = space-5; knob r = half of space-6
+-->
+<rect class="ink tile" x="496" y="24" width="176" height="240" rx="14"/>
+<rect class="blue tile" x="680" y="24" width="264" height="112" rx="14"/>
+<rect class="orange tile" x="680" y="144" width="112" height="120" rx="14"/>
+<rect class="tint tile" x="800" y="144" width="144" height="120" rx="14"/>
+<circle class="dot" cx="824" cy="168" r="2"/>
+<circle class="dot" cx="824" cy="188" r="2"/>
+<circle class="dot" cx="824" cy="208" r="2"/>
+<circle class="dot" cx="824" cy="228" r="2"/>
+<circle class="dot" cx="824" cy="248" r="2"/>
+<circle class="dot" cx="844" cy="168" r="2"/>
+<circle class="dot" cx="844" cy="188" r="2"/>
+<circle class="dot" cx="844" cy="208" r="2"/>
+<circle class="dot" cx="844" cy="228" r="2"/>
+<circle class="dot" cx="844" cy="248" r="2"/>
+<circle class="dot" cx="864" cy="168" r="2"/>
+<circle class="dot" cx="864" cy="188" r="2"/>
+<circle class="dot" cx="864" cy="208" r="2"/>
+<circle class="dot" cx="864" cy="228" r="2"/>
+<circle class="dot" cx="864" cy="248" r="2"/>
+<circle class="dot" cx="884" cy="168" r="2"/>
+<circle class="dot" cx="884" cy="188" r="2"/>
+<circle class="dot" cx="884" cy="208" r="2"/>
+<circle class="dot" cx="884" cy="228" r="2"/>
+<circle class="dot" cx="884" cy="248" r="2"/>
+<circle class="dot" cx="904" cy="168" r="2"/>
+<circle class="dot" cx="904" cy="188" r="2"/>
+<circle class="dot" cx="904" cy="208" r="2"/>
+<circle class="dot" cx="904" cy="228" r="2"/>
+<circle class="dot" cx="904" cy="248" r="2"/>
+<circle class="dot" cx="924" cy="168" r="2"/>
+<circle class="dot" cx="924" cy="188" r="2"/>
+<circle class="dot" cx="924" cy="208" r="2"/>
+<circle class="dot" cx="924" cy="228" r="2"/>
+<circle class="dot" cx="924" cy="248" r="2"/>
+<circle class="knob" cx="636" cy="228" r="12"/>
+</svg>
+<div class="words">
+<h1 class="name">Pereira<br>UI</h1>
+<p class="tag">Grey-first, hairline-bordered UI — six base themes, two accents.</p>
+</div>
+</div>
+</body>
+</html>

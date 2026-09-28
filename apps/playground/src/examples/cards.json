@@ -1,0 +1,243 @@
+{
+  "Accordion": {
+    "group": "Display",
+    "height": 320
+  },
+  "Alert": {
+    "group": "Feedback",
+    "height": 200
+  },
+  "AlertDialog": {
+    "group": "Overlays",
+    "height": 330,
+    "click": "[data-slot=alert-dialog-trigger]"
+  },
+  "Avatar": {
+    "group": "Display",
+    "height": 88
+  },
+  "Badge": {
+    "group": "Display",
+    "height": 72
+  },
+  "Breadcrumb": {
+    "group": "Navigation",
+    "height": 72
+  },
+  "Button": {
+    "group": "Actions",
+    "height": 240
+  },
+  "ButtonGroup": {
+    "group": "Actions",
+    "height": 90
+  },
+  "Card": {
+    "group": "Display",
+    "height": 350
+  },
+  "Checkbox": {
+    "group": "Forms",
+    "height": 130
+  },
+  "Collapsible": {
+    "group": "Display",
+    "height": 230,
+    "click": "[data-slot=collapsible-trigger]"
+  },
+  "Command": {
+    "group": "Navigation",
+    "height": 400
+  },
+  "Dialog": {
+    "group": "Overlays",
+    "height": 340,
+    "props": {
+      "defaultOpen": true
+    }
+  },
+  "Drawer": {
+    "group": "Overlays",
+    "height": 520,
+    "width": 390,
+    "subtitle": "Phone width: the responsive Dialog becomes a bottom Drawer below 768px",
+    "patch": [
+      [
+        "React.useState(false)",
+        "React.useState(true)"
+      ]
+    ]
+  },
+  "DropdownMenu": {
+    "group": "Overlays",
+    "height": 480,
+    "patch": [
+      [
+        "<DropdownMenu>",
+        "<DropdownMenu defaultOpen modal={false}>"
+      ]
+    ]
+  },
+  "Empty": {
+    "group": "Feedback",
+    "height": 350
+  },
+  "Field": {
+    "group": "Forms",
+    "height": 760
+  },
+  "HoverCard": {
+    "group": "Overlays",
+    "height": 230,
+    "patch": [
+      [
+        "<HoverCard>",
+        "<HoverCard defaultOpen>"
+      ]
+    ]
+  },
+  "Input": {
+    "group": "Forms",
+    "height": 204
+  },
+  "InputGroup": {
+    "group": "Forms",
+    "height": 420
+  },
+  "Item": {
+    "group": "Display",
+    "height": 200
+  },
+  "Kbd": {
+    "group": "Display",
+    "height": 108
+  },
+  "Label": {
+    "group": "Forms",
+    "height": 72
+  },
+  "NavigationMenu": {
+    "group": "Navigation",
+    "height": 460,
+    "click": "[data-slot=navigation-menu-trigger]"
+  },
+  "Pagination": {
+    "group": "Navigation",
+    "height": 84
+  },
+  "Popover": {
+    "group": "Overlays",
+    "height": 330,
+    "click": "[data-slot=popover-trigger]"
+  },
+  "Progress": {
+    "group": "Feedback",
+    "height": 60
+  },
+  "RadioGroup": {
+    "group": "Forms",
+    "height": 120
+  },
+  "ScrollArea": {
+    "group": "Display",
+    "height": 336
+  },
+  "Select": {
+    "group": "Forms",
+    "height": 300,
+    "props": {
+      "defaultOpen": true
+    }
+  },
+  "Separator": {
+    "group": "Display",
+    "height": 140
+  },
+  "Sheet": {
+    "group": "Overlays",
+    "height": 520,
+    "click": "[data-slot=sheet-trigger]"
+  },
+  "Sidebar": {
+    "group": "Layout",
+    "height": 620,
+    "width": 1100,
+    "pad": false,
+    "subtitle": "sidebar-16: sticky header + sidebar, desktop"
+  },
+  "SidebarMobile": {
+    "group": "Layout",
+    "height": 720,
+    "width": 390,
+    "pad": false,
+    "page": true,
+    "subtitle": "Same layout at phone width: the sidebar opens as a Sheet"
+  },
+  "SiteHeader": {
+    "group": "Layout",
+    "height": 380,
+    "width": 1100,
+    "pad": false,
+    "subtitle": "Top navigation for sites and docs, desktop"
+  },
+  "SiteHeaderMobile": {
+    "group": "Layout",
+    "height": 640,
+    "width": 390,
+    "pad": false,
+    "page": true,
+    "subtitle": "Same header at phone width, menu open",
+    "props": {}
+  },
+  "Skeleton": {
+    "group": "Feedback",
+    "height": 100
+  },
+  "Slider": {
+    "group": "Forms",
+    "height": 60
+  },
+  "Spinner": {
+    "group": "Feedback",
+    "height": 200
+  },
+  "Switch": {
+    "group": "Forms",
+    "height": 100
+  },
+  "Table": {
+    "group": "Display",
+    "height": 460
+  },
+  "Tabs": {
+    "group": "Navigation",
+    "height": 210
+  },
+  "Textarea": {
+    "group": "Forms",
+    "height": 150
+  },
+  "Toaster": {
+    "group": "Feedback",
+    "height": 220,
+    "subtitle": "Sonner toasts",
+    "props": {
+      "autoShow": true
+    }
+  },
+  "Toggle": {
+    "group": "Actions",
+    "height": 80
+  },
+  "ToggleGroup": {
+    "group": "Actions",
+    "height": 84
+  },
+  "Tooltip": {
+    "group": "Overlays",
+    "height": 130,
+    "props": {
+      "defaultOpen": true
+    }
+  }
+}

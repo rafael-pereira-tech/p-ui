@@ -1,0 +1,12 @@
+# DropdownMenu
+
+Displays a menu to the user — such as a set of actions or functions — triggered by a button. From shadcn/ui (new-york-v4), exported as `PereiraUI.DropdownMenu`.
+
+## Parts
+`DropdownMenu` › `DropdownMenuTrigger asChild` › `DropdownMenuContent align` › `DropdownMenuLabel`, `DropdownMenuGroup`, `DropdownMenuItem variant`, `DropdownMenuCheckboxItem`, `DropdownMenuRadioGroup`/`RadioItem`, `DropdownMenuSeparator`, `DropdownMenuShortcut`, `DropdownMenuSub` (`SubTrigger`, `SubContent`).
+
+## Consumer provides
+Items with `onSelect`; `variant="destructive"` on dangerous items; shortcuts as `DropdownMenuShortcut` text.
+
+## Rules
+`popover` surface, `shadow-md`, `radius-md`; hover/focus `accent`. Group related actions, separate destructive ones at the bottom.
