@@ -48,6 +48,9 @@ jobs:
         env:
           BASE_PATH: /pereira-ui/
 
+      - name: Disable Jekyll
+        run: touch apps/playground/dist/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
