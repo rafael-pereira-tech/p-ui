@@ -1,6 +1,6 @@
 # ButtonGroup
 
-A container that groups related buttons together with consistent styling. From shadcn/ui (new-york-v4), exported as `PUI.ButtonGroup`.
+A container that groups related buttons together with consistent styling. From shadcn/ui (base-nova), exported as `PUI.ButtonGroup`.
 
 ## Parts
 `ButtonGroup orientation` › Buttons, `ButtonGroupSeparator`, `ButtonGroupText`; nest ButtonGroups for spaced clusters.

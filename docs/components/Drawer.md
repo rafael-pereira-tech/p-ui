@@ -1,12 +1,12 @@
 # Drawer
 
-A panel that slides in from an edge and can be dragged to dismiss (vaul); the bottom sheet of phone UIs. From shadcn/ui (new-york-v4), exported as `PUI.Drawer`.
+A panel that slides in from an edge and can be dragged to dismiss (Base UI Drawer); the bottom sheet of phone UIs. From shadcn/ui (base-nova), exported as `PUI.Drawer`.
 
 ## When to use
 On phones, instead of Dialog: forms, pickers and action lists that should be thumb-reachable and swipe-dismissable. On desktop, prefer Dialog or Sheet. The standard responsive pattern: `useMediaQuery("(min-width: 768px)")` → render Dialog on desktop, Drawer below 768px (the preview is this pattern at phone width).
 
 ## Parts
-`Drawer direction` › `DrawerTrigger asChild` › `DrawerContent` (`DrawerHeader` › `DrawerTitle`, `DrawerDescription`; body; `DrawerFooter` with `DrawerClose`).
+`Drawer direction` › `DrawerTrigger render={…}` › `DrawerContent` (`DrawerHeader` › `DrawerTitle`, `DrawerDescription`; body; `DrawerFooter` with `DrawerClose`).
 
 ## Consumer provides
 `open`/`onOpenChange`; `direction`: `bottom` (default) | `top` | `left` | `right`; a `DrawerTitle`.

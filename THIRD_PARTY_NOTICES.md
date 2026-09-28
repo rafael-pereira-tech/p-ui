@@ -4,7 +4,7 @@ p-ui includes or derives from the following works.
 
 ## shadcn/ui
 
-Components (`packages/react/src/components`), themes (`packages/react/tokens.json` colour values), examples (`apps/playground/src/examples`, `apps/playground/src/blocks`) and the SiteHeader structure derive from https://github.com/shadcn-ui/ui (apps/v4, commit 98a1fe6).
+Components (`packages/react/src/components`), themes (`packages/react/tokens.json` colour values), examples (`apps/playground/src/examples`, `apps/playground/src/blocks`) and the SiteHeader structure derive from https://github.com/shadcn-ui/ui (apps/v4, commit 98a1fe6; components regenerated from the `base-nova` registry style with shadcn CLI 4.21.0). `packages/react/styles/shadcn.css` is a copy of that CLI's `tailwind.css`.
 
 ```
 MIT License
@@ -29,6 +29,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+## Base UI
+
+The components are built on `@base-ui/react` (https://base-ui.com), MIT License, Copyright (c) 2024 Material-UI SAS.
 
 ## Geist and Geist Mono
 

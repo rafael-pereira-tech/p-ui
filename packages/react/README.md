@@ -1,6 +1,6 @@
 # @p-ui/react
 
-p-ui's React 19 components — shadcn/ui (new-york-v4) with six base themes and two accent overlays, plus a responsive `SiteHeader`.
+p-ui's React 19 components — shadcn/ui (base-nova style, Base UI primitives) with six base themes and two accent overlays, plus a responsive `SiteHeader`.
 
 ## Install
 

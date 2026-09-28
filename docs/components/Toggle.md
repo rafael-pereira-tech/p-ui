@@ -1,6 +1,6 @@
 # Toggle
 
-A two-state button that can be either on or off. From shadcn/ui (new-york-v4), exported as `PUI.Toggle`.
+A two-state button that can be either on or off. From shadcn/ui (base-nova), exported as `PUI.Toggle`.
 
 ## Consumer provides
 `pressed`/`defaultPressed`, `onPressedChange`, `variant`: `default | outline`, `size`: `sm | default | lg`, an `aria-label` when icon-only.

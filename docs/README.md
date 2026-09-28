@@ -54,7 +54,7 @@ p-ui is shadcn/ui's semantic token set and component styling, organised around t
 
 ## Components
 
-- Load `components/bundle.css` after the tokens and use `window.PUI.*` (React 19). These are shadcn/ui's new-york-v4 components as-is, plus SiteHeader — 45 families:
+- Load `components/bundle.css` after the tokens and use `window.PUI.*` (React 19). These are shadcn/ui's base-nova components (Base UI primitives) as-is, plus SiteHeader — 45 families:
   - Actions: Button, ButtonGroup, Toggle, ToggleGroup.
   - Forms: Field, Label, Input, InputGroup, Textarea, Select, Checkbox, RadioGroup, Switch, Slider.
   - Navigation and layout: Sidebar, SiteHeader, NavigationMenu, Breadcrumb, Tabs, Pagination, Command.
@@ -76,6 +76,6 @@ p-ui is shadcn/ui's semantic token set and component styling, organised around t
 ## Not synced
 
 - From shadcn/ui: Calendar and Date Picker (react-day-picker), Chart (recharts), Carousel (embla), Combobox (Base UI), Input OTP, Resizable, Form (react-hook-form), Context Menu, Menubar, Aspect Ratio, Native Select, Direction, and the new chat set (Message, Bubble, Attachment, Marker, Message Scroller).
-- The other base colours (Mauve, Olive, Mist, Taupe) and accents, the alternative styles (Nova, Maia, Lyra, Mira, Luma, Sera, Rhea), and the other font options.
+- The other base colours (Mauve, Olive, Mist, Taupe) and accents, the alternative styles (Vega, Maia, Lyra, Mira, Luma, Sera, Rhea) and the Radix and React Aria builds, and the other font options.
 - The accent themes' own `secondary` overrides were left out so an accent doesn't pull a Stone or Neutral base toward Zinc greys.
 - `destructive-foreground` (defined only in the docs site, not the installable themes) and the docs site's `surface`, `code` and `selection` variables.

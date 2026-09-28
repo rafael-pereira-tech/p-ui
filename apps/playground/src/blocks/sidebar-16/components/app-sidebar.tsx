@@ -1,16 +1,4 @@
 import * as React from "react"
-import {
-  BookOpen,
-  Bot,
-  Command,
-  Frame,
-  LifeBuoy,
-  Map,
-  PieChart,
-  Send,
-  Settings2,
-  SquareTerminal,
-} from "lucide-react"
 
 import { NavMain } from "./nav-main"
 import { NavProjects } from "./nav-projects"
@@ -25,6 +13,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@p-ui/react"
+import { TerminalSquareIcon, BotIcon, BookOpenIcon, Settings2Icon, LifeBuoyIcon, SendIcon, FrameIcon, PieChartIcon, MapIcon, TerminalIcon } from "lucide-react"
 
 const data = {
   user: {
@@ -36,7 +25,10 @@ const data = {
     {
       title: "Playground",
       url: "#",
-      icon: SquareTerminal,
+      icon: (
+        <TerminalSquareIcon
+        />
+      ),
       isActive: true,
       items: [
         {
@@ -56,7 +48,10 @@ const data = {
     {
       title: "Models",
       url: "#",
-      icon: Bot,
+      icon: (
+        <BotIcon
+        />
+      ),
       items: [
         {
           title: "Genesis",
@@ -75,7 +70,10 @@ const data = {
     {
       title: "Documentation",
       url: "#",
-      icon: BookOpen,
+      icon: (
+        <BookOpenIcon
+        />
+      ),
       items: [
         {
           title: "Introduction",
@@ -98,7 +96,10 @@ const data = {
     {
       title: "Settings",
       url: "#",
-      icon: Settings2,
+      icon: (
+        <Settings2Icon
+        />
+      ),
       items: [
         {
           title: "General",
@@ -123,33 +124,47 @@ const data = {
     {
       title: "Support",
       url: "#",
-      icon: LifeBuoy,
+      icon: (
+        <LifeBuoyIcon
+        />
+      ),
     },
     {
       title: "Feedback",
       url: "#",
-      icon: Send,
+      icon: (
+        <SendIcon
+        />
+      ),
     },
   ],
   projects: [
     {
       name: "Design Engineering",
       url: "#",
-      icon: Frame,
+      icon: (
+        <FrameIcon
+        />
+      ),
     },
     {
       name: "Sales & Marketing",
       url: "#",
-      icon: PieChart,
+      icon: (
+        <PieChartIcon
+        />
+      ),
     },
     {
       name: "Travel",
       url: "#",
-      icon: Map,
+      icon: (
+        <MapIcon
+        />
+      ),
     },
   ],
 }
-
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar
@@ -159,16 +174,14 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" asChild>
-              <a href="#">
-                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                  <Command className="size-4" />
-                </div>
-                <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium">Acme Inc</span>
-                  <span className="truncate text-xs">Enterprise</span>
-                </div>
-              </a>
+            <SidebarMenuButton size="lg" render={<a href="#" />}>
+              <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
+                <TerminalIcon className="size-4" />
+              </div>
+              <div className="grid flex-1 text-left text-sm leading-tight">
+                <span className="truncate font-medium">Acme Inc</span>
+                <span className="truncate text-xs">Enterprise</span>
+              </div>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>

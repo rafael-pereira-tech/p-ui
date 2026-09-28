@@ -1,12 +1,12 @@
 # Sheet
 
-Extends the Dialog component to display content that complements the main content of the screen — a side panel. From shadcn/ui (new-york-v4), exported as `PUI.Sheet`.
+Extends the Dialog component to display content that complements the main content of the screen — a side panel. From shadcn/ui (base-nova), exported as `PUI.Sheet`.
 
 ## When to use
 Side panels: filters, details of a selected row, edit forms that keep the page visible, and the mobile navigation menu. For a short confirmation use AlertDialog; for a phone-first bottom panel use Drawer.
 
 ## Parts
-`Sheet` › `SheetTrigger asChild` › `SheetContent side` (`SheetHeader` › `SheetTitle`, `SheetDescription`; body; `SheetFooter` with `SheetClose`).
+`Sheet` › `SheetTrigger render={…}` › `SheetContent side` (`SheetHeader` › `SheetTitle`, `SheetDescription`; body; `SheetFooter` with `SheetClose`).
 
 ## Consumer provides
 `open`/`onOpenChange` or `defaultOpen`; `side`: `right` (default) | `left` | `top` | `bottom`; `showCloseButton={false}` to hide the ×; always a `SheetTitle`.

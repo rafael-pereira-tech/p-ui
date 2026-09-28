@@ -1,6 +1,6 @@
 # Switch
 
-A control that allows the user to toggle between checked and not checked. From shadcn/ui (new-york-v4), exported as `PUI.Switch`.
+A control that allows the user to toggle between checked and not checked. From shadcn/ui (base-nova), exported as `PUI.Switch`.
 
 ## When to use
 Settings that apply immediately (on/off). For choices submitted with a form, prefer Checkbox.

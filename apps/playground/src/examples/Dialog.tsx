@@ -3,7 +3,7 @@ import { Button, Dialog, DialogClose, DialogContent, DialogDescription, DialogFo
 export default function DialogExample({ defaultOpen = false }: { defaultOpen?: boolean }) {
   return (
     <Dialog defaultOpen={defaultOpen}>
-      <DialogTrigger asChild><Button variant="outline">Edit profile</Button></DialogTrigger>
+      <DialogTrigger render={<Button variant="outline" />}>Edit profile</DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>
@@ -14,7 +14,7 @@ export default function DialogExample({ defaultOpen = false }: { defaultOpen?: b
           <Input id="dialog-name" defaultValue="Pedro Duarte" />
         </div>
         <DialogFooter>
-          <DialogClose asChild><Button variant="outline">Cancel</Button></DialogClose>
+          <DialogClose render={<Button variant="outline" />}>Cancel</DialogClose>
           <Button>Save changes</Button>
         </DialogFooter>
       </DialogContent>

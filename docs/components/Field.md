@@ -1,6 +1,6 @@
 # Field
 
-Combine labels, controls, and help text to compose accessible form fields and grouped inputs. From shadcn/ui (new-york-v4), exported as `PUI.Field`.
+Combine labels, controls, and help text to compose accessible form fields and grouped inputs. From shadcn/ui (base-nova), exported as `PUI.Field`.
 
 ## Parts
 `FieldSet` › `FieldLegend`, `FieldDescription`, `FieldGroup` › `Field orientation` (`vertical` | `horizontal` | `responsive`) › `FieldLabel`, control, `FieldDescription`, `FieldError`; `FieldContent`, `FieldTitle`, `FieldSeparator`.

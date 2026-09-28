@@ -1,6 +1,6 @@
 # Toaster
 
-An opinionated toast component for React (Sonner): mount `Toaster` once, call `toast()` anywhere. From shadcn/ui (new-york-v4), exported as `PUI.Toaster`.
+An opinionated toast component for React (Sonner): mount `Toaster` once, call `toast()` anywhere. From shadcn/ui (base-nova), exported as `PUI.Toaster`.
 
 ## Consumer provides
 One `<Toaster />` near the app root (pass `theme="dark"` in `-dark` themes, `position`), then `toast("Title", { description, action: {label, onClick} })`, `toast.success`, `toast.error`, `toast.promise`. `toast` is exported as `PUI.toast`.

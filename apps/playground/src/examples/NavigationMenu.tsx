@@ -3,7 +3,7 @@ import * as React from "react"
 import { Link } from "../lib/link"
 import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
 
-import { useIsMobile } from "@p-ui/react"
+import { } from "@p-ui/react"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -53,28 +53,23 @@ const components: { title: string; href: string; description: string }[] = [
 ]
 
 export default function NavigationMenuDemo() {
-  const isMobile = useIsMobile()
-
   return (
-    <NavigationMenu viewport={isMobile}>
+    <NavigationMenu>
       <NavigationMenuList className="flex-wrap">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Home</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b from-muted/50 to-muted p-4 no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md md:p-6"
-                    href="/"
-                  >
-                    <div className="mb-2 text-lg font-medium sm:mt-4">
-                      shadcn/ui
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Tailwind CSS.
-                    </p>
-                  </a>
+                <NavigationMenuLink render={<a className="flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b from-muted/50 to-muted p-4 no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md md:p-6"
+                    href="/" />}>
+                  <div className="mb-2 text-lg font-medium sm:mt-4">
+                    shadcn/ui
+                  </div>
+                  <p className="text-sm leading-tight text-muted-foreground">
+                    Beautifully designed components built with Tailwind CSS.
+                  </p>
+                
                 </NavigationMenuLink>
               </li>
               <ListItem href="/docs" title="Introduction">
@@ -106,8 +101,8 @@ export default function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">Docs</Link>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} render={<Link href="/docs" />}>
+Docs
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className="hidden md:block">
@@ -115,29 +110,26 @@ export default function NavigationMenuDemo() {
           <NavigationMenuContent>
             <ul className="grid w-[300px] gap-4">
               <li>
-                <NavigationMenuLink asChild>
-                  <Link href="#">
-                    <div className="font-medium">Components</div>
-                    <div className="text-muted-foreground">
-                      Browse all components in the library.
-                    </div>
-                  </Link>
+                <NavigationMenuLink render={<Link href="#" />}>
+                  <div className="font-medium">Components</div>
+                  <div className="text-muted-foreground">
+                    Browse all components in the library.
+                  </div>
+                
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">
-                    <div className="font-medium">Documentation</div>
-                    <div className="text-muted-foreground">
-                      Learn how to use the library.
-                    </div>
-                  </Link>
+                <NavigationMenuLink render={<Link href="#" />}>
+                  <div className="font-medium">Documentation</div>
+                  <div className="text-muted-foreground">
+                    Learn how to use the library.
+                  </div>
+                
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">
-                    <div className="font-medium">Blog</div>
-                    <div className="text-muted-foreground">
-                      Read our latest blog posts.
-                    </div>
-                  </Link>
+                <NavigationMenuLink render={<Link href="#" />}>
+                  <div className="font-medium">Blog</div>
+                  <div className="text-muted-foreground">
+                    Read our latest blog posts.
+                  </div>
+                
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -148,14 +140,14 @@ export default function NavigationMenuDemo() {
           <NavigationMenuContent>
             <ul className="grid w-[200px] gap-4">
               <li>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Components</Link>
+                <NavigationMenuLink render={<Link href="#" />}>
+Components
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Documentation</Link>
+                <NavigationMenuLink render={<Link href="#" />}>
+Documentation
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#">Blocks</Link>
+                <NavigationMenuLink render={<Link href="#" />}>
+Blocks
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -166,23 +158,20 @@ export default function NavigationMenuDemo() {
           <NavigationMenuContent>
             <ul className="grid w-[200px] gap-4">
               <li>
-                <NavigationMenuLink asChild>
-                  <Link href="#" className="flex-row items-center gap-2">
-                    <CircleHelpIcon />
-                    Backlog
-                  </Link>
+                <NavigationMenuLink render={<Link href="#" className="flex-row items-center gap-2" />}>
+                  <CircleHelpIcon />
+                  Backlog
+                
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#" className="flex-row items-center gap-2">
-                    <CircleIcon />
-                    To Do
-                  </Link>
+                <NavigationMenuLink render={<Link href="#" className="flex-row items-center gap-2" />}>
+                  <CircleIcon />
+                  To Do
+                
                 </NavigationMenuLink>
-                <NavigationMenuLink asChild>
-                  <Link href="#" className="flex-row items-center gap-2">
-                    <CircleCheckIcon />
-                    Done
-                  </Link>
+                <NavigationMenuLink render={<Link href="#" className="flex-row items-center gap-2" />}>
+                  <CircleCheckIcon />
+                  Done
+                
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -201,13 +190,12 @@ function ListItem({
 }: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
   return (
     <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link href={href}>
-          <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </Link>
+      <NavigationMenuLink render={<Link href={href} />}>
+        <div className="text-sm leading-none font-medium">{title}</div>
+        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          {children}
+        </p>
+      
       </NavigationMenuLink>
     </li>
   )

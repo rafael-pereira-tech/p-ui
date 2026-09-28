@@ -1,6 +1,6 @@
 # NavigationMenu
 
-A collection of links for navigating websites. From shadcn/ui (new-york-v4), exported as `PUI.NavigationMenu`.
+A collection of links for navigating websites. From shadcn/ui (base-nova), exported as `PUI.NavigationMenu`.
 
 ## Parts
 `NavigationMenu viewport` › `NavigationMenuList` › `NavigationMenuItem` › `NavigationMenuTrigger` + `NavigationMenuContent` (rich dropdown panels), or `NavigationMenuLink asChild` with `navigationMenuTriggerStyle()` for plain links.
