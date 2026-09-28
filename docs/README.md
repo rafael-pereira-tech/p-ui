@@ -63,7 +63,7 @@ p-ui is shadcn/ui's semantic token set and component styling, organised around t
   - Feedback: Alert, Toaster, Progress, Spinner, Skeleton, Empty.
   - Hooks and helpers: `useIsMobile`, `useMediaQuery`, `useSidebar`, `toast`, `cn`.
 - `SiteHeader` is the one intentional addition: shadcn ships its responsive docs header only inside its website, not as a registry component, so it is rebuilt here from that code as a reusable component.
-- In code, use the `@p-ui/react` package (repository `rafael-pereira-tech/p-ui`): `import { Button } from "@p-ui/react"`, and in the app stylesheet `@import "tailwindcss"; @import "@p-ui/react/styles.css";` plus `@source` for the package's `dist`. Without Tailwind, import `@p-ui/react/compiled.css`. Set `data-theme` / `data-accent` on `<html>`.
+- In code, prefer the registry: add `"@p-ui": "https://rafael-pereira-tech.github.io/p-ui/r/{name}.json"` to `components.json` `registries`, run `npx shadcn@latest add @p-ui/style` once and then `npx shadcn@latest add @p-ui/<component>`; the code lands in the project and is owned there. The `@p-ui/react` package (repository `rafael-pereira-tech/p-ui`) remains for apps that want a dependency instead: `import { Button } from "@p-ui/react"`, and in the app stylesheet `@import "tailwindcss"; @import "@p-ui/react/styles.css";` plus `@source` for the package's `dist`. Without Tailwind, import `@p-ui/react/compiled.css`. Set `data-theme` / `data-accent` on `<html>`.
 - The token names are shadcn/ui's, so components copied from shadcn keep working on these tokens unchanged.
 - Wrap the app once in `TooltipProvider` and mount one `Toaster`. Build forms with `Field` (label, description, error). Every overlay gets its title.
 

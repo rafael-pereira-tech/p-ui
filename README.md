@@ -19,6 +19,24 @@ pnpm check        # lint → build → typecheck → design-system build (what C
 
 Requires Node 22 (`.nvmrc`) and pnpm 10.
 
+## Using the registry (recommended)
+
+p-ui publishes a [shadcn registry](https://ui.shadcn.com/docs/registry) at `https://rafael-pereira-tech.github.io/p-ui/r/`. Products pull the code in and own it from then on — no runtime dependency on this repo.
+
+```json
+// components.json
+{ "registries": { "@p-ui": "https://rafael-pereira-tech.github.io/p-ui/r/{name}.json" } }
+```
+
+```bash
+npx shadcn@latest add @p-ui/style              # once: tokens, six themes, accents, variants, fonts
+npx shadcn@latest add @p-ui/button @p-ui/dialog # any component; dependencies come along
+```
+
+New project: `npx shadcn@latest init -t vite -b base -p nova` (Vite + Tailwind on the same `base-nova` style p-ui uses), then `add @p-ui/style` and the components as above. Set `data-theme` / `data-accent` on `<html>`. The `@custom-variant dark (&:is(.dark *))` line that `init` writes can go: `@p-ui/style` adds its own, which also covers `.dark`, and Tailwind keeps the last definition.
+
+`@p-ui/style` writes the same CSS the package ships (`packages/react/styles/*.css`) into the project's stylesheet: tokens for the six themes and two accents, the `@theme` mapping, the custom variants and utilities the components need, and the Geist fonts via `@fontsource-variable`. The catalog is `r/registry.json`; `pnpm registry` rebuilds it from `packages/react` (`scripts/build-registry.mjs`) and it deploys with the playground.
+
 ## Using the package
 
 ```bash
@@ -52,6 +70,7 @@ See [`packages/react/README.md`](packages/react/README.md) for the full API surf
 
 - **Colours, radius, fonts:** edit `packages/react/tokens.json`, then `pnpm tokens` regenerates `styles/tokens.css` and `styles/accents.css`.
 - **Components:** `packages/react/src/components/*.tsx` — shadcn/ui source, owned here. Add one by generating it with `npx shadcn add <name>` in a project set to the `base-nova` style (or copying from `apps/v4/registry/base-nova/ui/`), rewriting `@/components/ui/x` imports to `./x`, exporting it from `src/index.ts`, adding an example in `apps/playground/src/examples/<Name>.tsx` + an entry in `cards.json`, and a guideline in `docs/components/<Name>.md`.
+- **Registry:** `pnpm registry` (also part of `pnpm build`) regenerates `apps/playground/public/r/` from the package; nothing to edit by hand.
 - **Keep the design-system artifact in sync:** see [`docs/design-system-sync.md`](docs/design-system-sync.md).
 
 ## Credits
