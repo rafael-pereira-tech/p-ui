@@ -40,10 +40,9 @@ export default function InputGroupDemo() {
         </InputGroupAddon>
         <InputGroupAddon align="inline-end">
           <Tooltip>
-            <TooltipTrigger asChild>
-              <InputGroupButton className="rounded-full" size="icon-xs">
-                <IconInfoCircle />
-              </InputGroupButton>
+            <TooltipTrigger render={<InputGroupButton className="rounded-full" size="icon-xs" />}>
+              <IconInfoCircle />
+            
             </TooltipTrigger>
             <TooltipContent>This is content in a tooltip.</TooltipContent>
           </Tooltip>
@@ -60,8 +59,8 @@ export default function InputGroupDemo() {
             <IconPlus />
           </InputGroupButton>
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <InputGroupButton variant="ghost">Auto</InputGroupButton>
+            <DropdownMenuTrigger render={<InputGroupButton variant="ghost" />}>
+Auto
             </DropdownMenuTrigger>
             <DropdownMenuContent
               side="top"

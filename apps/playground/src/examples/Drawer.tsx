@@ -32,8 +32,8 @@ export default function DrawerDialogDemo() {
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogTrigger asChild>
-          <Button variant="outline">Edit Profile</Button>
+        <DialogTrigger render={<Button variant="outline" />}>
+Edit Profile
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
@@ -51,8 +51,8 @@ export default function DrawerDialogDemo() {
 
   return (
     <Drawer open={open} onOpenChange={setOpen}>
-      <DrawerTrigger asChild>
-        <Button variant="outline">Edit Profile</Button>
+      <DrawerTrigger render={<Button variant="outline" />}>
+Edit Profile
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader className="text-left">
@@ -63,8 +63,8 @@ export default function DrawerDialogDemo() {
         </DrawerHeader>
         <ProfileForm className="px-4" />
         <DrawerFooter className="pt-2">
-          <DrawerClose asChild>
-            <Button variant="outline">Cancel</Button>
+          <DrawerClose render={<Button variant="outline" />}>
+Cancel
           </DrawerClose>
         </DrawerFooter>
       </DrawerContent>

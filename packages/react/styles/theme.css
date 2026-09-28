@@ -4,6 +4,7 @@
  * Import through "@p-ui/react/styles.css" after "tailwindcss".
  */
 @import "tw-animate-css";
+@import "./shadcn.css";
 
 /* dark: follows the design system's dark themes (data-theme ending in "-dark") or a .dark class */
 @custom-variant dark (&:where([data-theme$="-dark"], [data-theme$="-dark"] *, .dark, .dark *));

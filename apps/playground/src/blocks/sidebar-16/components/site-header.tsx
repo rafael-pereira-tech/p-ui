@@ -1,5 +1,3 @@
-import { SidebarIcon } from "lucide-react"
-
 import { SearchForm } from "./search-form"
 import {
   Breadcrumb,
@@ -12,6 +10,7 @@ import {
 import { Button } from "@p-ui/react"
 import { Separator } from "@p-ui/react"
 import { useSidebar } from "@p-ui/react"
+import { PanelLeftIcon } from "lucide-react"
 
 export function SiteHeader() {
   const { toggleSidebar } = useSidebar()
@@ -25,9 +24,13 @@ export function SiteHeader() {
           size="icon"
           onClick={toggleSidebar}
         >
-          <SidebarIcon />
+          <PanelLeftIcon
+          />
         </Button>
-        <Separator orientation="vertical" className="mr-2 h-4" />
+        <Separator
+          orientation="vertical"
+          className="mr-2 data-vertical:h-4 data-vertical:self-auto"
+        />
         <Breadcrumb className="hidden sm:block">
           <BreadcrumbList>
             <BreadcrumbItem>

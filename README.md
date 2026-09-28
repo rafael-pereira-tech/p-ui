@@ -1,6 +1,6 @@
 # p-ui
 
-A design system built on [shadcn/ui](https://ui.shadcn.com) (v4, new-york style), organised around **theme variation**: three base palettes — Neutral, Zinc, Stone — each in light and dark, plus two accent overlays — Blue and Orange — that sit on top of any of them.
+A design system built on [shadcn/ui](https://ui.shadcn.com) (v4, `base-nova` style on [Base UI](https://base-ui.com)), organised around **theme variation**: three base palettes — Neutral, Zinc, Stone — each in light and dark, plus two accent overlays — Blue and Orange — that sit on top of any of them.
 
 | | |
 |---|---|
@@ -51,9 +51,9 @@ See [`packages/react/README.md`](packages/react/README.md) for the full API surf
 ## Changing the design
 
 - **Colours, radius, fonts:** edit `packages/react/tokens.json`, then `pnpm tokens` regenerates `styles/tokens.css` and `styles/accents.css`.
-- **Components:** `packages/react/src/components/*.tsx` — shadcn/ui source, owned here. Add one by copying from shadcn (`apps/v4/registry/new-york-v4/ui/`), exporting it from `src/index.ts`, adding an example in `apps/playground/src/examples/<Name>.tsx` + an entry in `cards.json`, and a guideline in `docs/components/<Name>.md`.
+- **Components:** `packages/react/src/components/*.tsx` — shadcn/ui source, owned here. Add one by generating it with `npx shadcn add <name>` in a project set to the `base-nova` style (or copying from `apps/v4/registry/base-nova/ui/`), rewriting `@/components/ui/x` imports to `./x`, exporting it from `src/index.ts`, adding an example in `apps/playground/src/examples/<Name>.tsx` + an entry in `cards.json`, and a guideline in `docs/components/<Name>.md`.
 - **Keep the design-system artifact in sync:** see [`docs/design-system-sync.md`](docs/design-system-sync.md).
 
 ## Credits
 
-Components and themes derive from shadcn/ui (MIT). Fonts are Geist and Geist Mono (SIL OFL 1.1). Icons are Lucide (ISC). See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+Components and themes derive from shadcn/ui (MIT), on top of Base UI (MIT). Fonts are Geist and Geist Mono (SIL OFL 1.1). Icons are Lucide (ISC). See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).

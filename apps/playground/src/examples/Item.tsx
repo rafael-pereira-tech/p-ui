@@ -27,18 +27,17 @@ export default function ItemDemo() {
           </Button>
         </ItemActions>
       </Item>
-      <Item variant="outline" size="sm" asChild>
-        <a href="#">
-          <ItemMedia>
-            <BadgeCheckIcon className="size-5" />
-          </ItemMedia>
-          <ItemContent>
-            <ItemTitle>Your profile has been verified.</ItemTitle>
-          </ItemContent>
-          <ItemActions>
-            <ChevronRightIcon className="size-4" />
-          </ItemActions>
-        </a>
+      <Item variant="outline" size="sm" render={<a href="#" />}>
+        <ItemMedia>
+          <BadgeCheckIcon className="size-5" />
+        </ItemMedia>
+        <ItemContent>
+          <ItemTitle>Your profile has been verified.</ItemTitle>
+        </ItemContent>
+        <ItemActions>
+          <ChevronRightIcon className="size-4" />
+        </ItemActions>
+      
       </Item>
     </div>
   )

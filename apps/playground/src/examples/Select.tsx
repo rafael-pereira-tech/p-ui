@@ -6,7 +6,7 @@ export default function SelectExample({ defaultOpen = false }: { defaultOpen?: b
       <SelectTrigger className="w-[180px]">
         <SelectValue placeholder="Select a fruit" />
       </SelectTrigger>
-      <SelectContent position="popper">
+      <SelectContent>
         <SelectGroup>
           <SelectLabel>Fruits</SelectLabel>
           {["Apple", "Banana", "Blueberry", "Grapes", "Pineapple"].map((f) => (

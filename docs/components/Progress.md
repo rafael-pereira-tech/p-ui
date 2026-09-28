@@ -1,6 +1,6 @@
 # Progress
 
-Displays an indicator showing the completion progress of a task, typically displayed as a progress bar. From shadcn/ui (new-york-v4), exported as `PUI.Progress`.
+Displays an indicator showing the completion progress of a task, typically displayed as a progress bar. From shadcn/ui (base-nova), exported as `PUI.Progress`.
 
 ## Consumer provides
 `value` 0–100.

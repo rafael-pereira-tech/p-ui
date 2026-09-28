@@ -1,6 +1,6 @@
 # Button
 
-Displays a button or a component that looks like a button. From shadcn/ui (new-york-v4), exported as `PUI.Button`.
+Displays a button or a component that looks like a button. From shadcn/ui (base-nova), exported as `PUI.Button`.
 
 ## When to use
 - `default` for the one primary action in a view; `secondary` beside it; `outline` for neutral actions on busy surfaces; `ghost` in toolbars and menus; `link` for inline navigation; `destructive` only for irreversible actions (delete, revoke).
@@ -9,7 +9,7 @@ Displays a button or a component that looks like a button. From shadcn/ui (new-y
 ## Consumer provides
 - `children` (label, optionally a leading/trailing lucide icon — icons auto-size to 16px).
 - `variant`: `default | secondary | outline | ghost | link | destructive`; `size`: `default (h-9) | xs | sm | lg | icon | icon-xs | icon-sm | icon-lg`.
-- `asChild` to render your own element (e.g. an `<a>`) with Button styling.
+- `render={<a href="…" />}` to render your own element with Button styling (Base UI render prop, in place of Radix `asChild`).
 - Native button props (`type`, `disabled`, `onClick`). Icon-only Buttons need `aria-label`.
 
 ## Theming

@@ -1,6 +1,6 @@
 # Kbd
 
-Used to display textual user input from keyboard. From shadcn/ui (new-york-v4), exported as `PUI.Kbd`.
+Used to display textual user input from keyboard. From shadcn/ui (base-nova), exported as `PUI.Kbd`.
 
 ## Parts
 `Kbd` (one key or chord), `KbdGroup` for sequences.

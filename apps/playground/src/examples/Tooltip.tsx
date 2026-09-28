@@ -4,7 +4,7 @@ export default function TooltipExample({ defaultOpen = false }: { defaultOpen?: 
   return (
     <div className="pt-10">
       <Tooltip defaultOpen={defaultOpen}>
-        <TooltipTrigger asChild><Button variant="outline">Hover</Button></TooltipTrigger>
+        <TooltipTrigger render={<Button variant="outline" />}>Hover</TooltipTrigger>
         <TooltipContent><p>Add to library</p></TooltipContent>
       </Tooltip>
     </div>

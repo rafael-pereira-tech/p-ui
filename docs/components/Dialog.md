@@ -1,9 +1,9 @@
 # Dialog
 
-A window overlaid on either the primary window or another dialog window, rendering the content underneath inert. From shadcn/ui (new-york-v4), exported as `PUI.Dialog`.
+A window overlaid on either the primary window or another dialog window, rendering the content underneath inert. From shadcn/ui (base-nova), exported as `PUI.Dialog`.
 
 ## Parts
-`Dialog` › `DialogTrigger asChild` › `DialogContent` (`DialogHeader` › `DialogTitle`, `DialogDescription`; body; `DialogFooter` with `DialogClose`).
+`Dialog` › `DialogTrigger render={…}` › `DialogContent` (`DialogHeader` › `DialogTitle`, `DialogDescription`; body; `DialogFooter` with `DialogClose`).
 
 ## Consumer provides
 `open`/`onOpenChange` or `defaultOpen`; a `DialogTitle` always (accessibility); `showCloseButton={false}` on `DialogContent` to hide the ×.

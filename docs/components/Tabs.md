@@ -1,6 +1,6 @@
 # Tabs
 
-A set of layered sections of content—known as tab panels—that are displayed one at a time. From shadcn/ui (new-york-v4), exported as `PUI.Tabs`.
+A set of layered sections of content—known as tab panels—that are displayed one at a time. From shadcn/ui (base-nova), exported as `PUI.Tabs`.
 
 ## Parts
 `Tabs defaultValue` › `TabsList` (`TabsTrigger value`) › `TabsContent value`.

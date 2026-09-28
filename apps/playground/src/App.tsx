@@ -56,11 +56,13 @@ function ThemeControls({ stacked = false }: { stacked?: boolean }) {
       <div className={stacked ? "grid gap-2" : "contents"}>
         {stacked && <Label>Accent</Label>}
         <ToggleGroup
-          type="single"
           size="sm"
           variant="outline"
-          value={accent}
-          onValueChange={(v) => v && setAccent(v as Accent)}
+          value={[accent]}
+          onValueChange={(v) => {
+            const next = v[0]
+            if (next) setAccent(next as Accent)
+          }}
           aria-label="Accent"
         >
           {ACCENTS.map((a) => (
@@ -147,10 +149,9 @@ function LayoutRoute({ name }: { name: string }) {
   return (
     <>
       <Example />
-      <Button asChild size="sm" variant="secondary" className="fixed right-4 bottom-4 z-[60] shadow-md">
-        <a href="#/layouts">
-          <ArrowLeftIcon /> Back to playground
-        </a>
+      <Button size="sm" variant="secondary" className="fixed right-4 bottom-4 z-[60] shadow-md" render={<a href="#/layouts" />}>
+        <ArrowLeftIcon /> Back to playground
+      
       </Button>
     </>
   )
@@ -200,10 +201,9 @@ export function App() {
           actions={<ThemeControls />}
           mobileActions={
             <Popover>
-              <PopoverTrigger asChild>
-                <Button variant="ghost" size="icon" aria-label="Theme settings">
-                  <PaletteIcon />
-                </Button>
+              <PopoverTrigger render={<Button variant="ghost" size="icon" aria-label="Theme settings" />}>
+                <PaletteIcon />
+              
               </PopoverTrigger>
               <PopoverContent align="end" className="w-64">
                 <ThemeControls stacked />
