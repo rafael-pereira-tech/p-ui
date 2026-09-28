@@ -1,13 +1,13 @@
-# Pereira UI
+# p-ui
 
 A design system built on [shadcn/ui](https://ui.shadcn.com) (v4, new-york style), organised around **theme variation**: three base palettes — Neutral, Zinc, Stone — each in light and dark, plus two accent overlays — Blue and Orange — that sit on top of any of them.
 
 | | |
 |---|---|
-| `packages/react` | **`@pereira-ui/react`** — 45 React 19 components, hooks, tokens and styles (Tailwind CSS v4) |
+| `packages/react` | **`@p-ui/react`** — 45 React 19 components, hooks, tokens and styles (Tailwind CSS v4) |
 | `apps/playground` | Vite app with every component live, the app-shell and site-header layouts, and a token browser; deployed to GitHub Pages |
 | `docs/` | The brand book (`README.md`) and one guideline file per component — also the design system's text |
-| `scripts/build-ds.mjs` | Rebuilds the Pereira UI design-system artifact's files from this repo (`pnpm ds`) |
+| `scripts/build-ds.mjs` | Rebuilds the p-ui design-system artifact's files from this repo (`pnpm ds`) |
 
 ## Quick start
 
@@ -22,7 +22,7 @@ Requires Node 22 (`.nvmrc`) and pnpm 10.
 ## Using the package
 
 ```bash
-pnpm add @pereira-ui/react
+pnpm add @p-ui/react
 ```
 
 **With Tailwind CSS v4** (recommended — you can use the same utilities in your own code):
@@ -30,15 +30,15 @@ pnpm add @pereira-ui/react
 ```css
 /* app.css */
 @import "tailwindcss";
-@import "@pereira-ui/react/styles.css";   /* tokens, accents, Tailwind theme mapping */
-@import "@pereira-ui/react/fonts.css";    /* optional: self-hosted Geist + Geist Mono */
-@source "../node_modules/@pereira-ui/react/dist";
+@import "@p-ui/react/styles.css";   /* tokens, accents, Tailwind theme mapping */
+@import "@p-ui/react/fonts.css";    /* optional: self-hosted Geist + Geist Mono */
+@source "../node_modules/@p-ui/react/dist";
 ```
 
-**Without Tailwind:** `import "@pereira-ui/react/compiled.css"` (preflight, every class the components use, tokens and fonts).
+**Without Tailwind:** `import "@p-ui/react/compiled.css"` (preflight, every class the components use, tokens and fonts).
 
 ```tsx
-import { Button, SiteHeader, Toaster, TooltipProvider } from "@pereira-ui/react"
+import { Button, SiteHeader, Toaster, TooltipProvider } from "@p-ui/react"
 
 <html data-theme="stone-dark" data-accent="orange">
 ```

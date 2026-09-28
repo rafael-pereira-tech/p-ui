@@ -1,6 +1,6 @@
 # Item
 
-A versatile component for displaying content with media, title, description, and actions. From shadcn/ui (new-york-v4), exported as `PereiraUI.Item`.
+A versatile component for displaying content with media, title, description, and actions. From shadcn/ui (new-york-v4), exported as `PUI.Item`.
 
 ## Parts
 `ItemGroup` › `Item variant size asChild` › `ItemMedia variant` (icon/avatar/image), `ItemContent` (`ItemTitle`, `ItemDescription`), `ItemActions`; `ItemHeader`, `ItemFooter`, `ItemSeparator`.

@@ -1,4 +1,4 @@
-import { Checkbox, Label } from "@pereira-ui/react"
+import { Checkbox, Label } from "@p-ui/react"
 
 export default function CheckboxExample() {
   return (

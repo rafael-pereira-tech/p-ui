@@ -8,10 +8,10 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@pereira-ui/react"
-import { Button } from "@pereira-ui/react"
-import { Separator } from "@pereira-ui/react"
-import { useSidebar } from "@pereira-ui/react"
+} from "@p-ui/react"
+import { Button } from "@p-ui/react"
+import { Separator } from "@p-ui/react"
+import { useSidebar } from "@p-ui/react"
 
 export function SiteHeader() {
   const { toggleSidebar } = useSidebar()

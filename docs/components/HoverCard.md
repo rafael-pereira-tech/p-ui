@@ -1,6 +1,6 @@
 # HoverCard
 
-For sighted users to preview content available behind a link. From shadcn/ui (new-york-v4), exported as `PereiraUI.HoverCard`.
+For sighted users to preview content available behind a link. From shadcn/ui (new-york-v4), exported as `PUI.HoverCard`.
 
 ## Parts
 `HoverCard openDelay closeDelay` › `HoverCardTrigger asChild` › `HoverCardContent`.

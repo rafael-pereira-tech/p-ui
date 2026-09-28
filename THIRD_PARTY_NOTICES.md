@@ -1,6 +1,6 @@
 # Third-party notices
 
-Pereira UI includes or derives from the following works.
+p-ui includes or derives from the following works.
 
 ## shadcn/ui
 

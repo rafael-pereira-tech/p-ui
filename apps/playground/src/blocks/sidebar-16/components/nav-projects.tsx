@@ -12,7 +12,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 import {
   SidebarGroup,
   SidebarGroupLabel,
@@ -21,7 +21,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export function NavProjects({
   projects,

@@ -11,7 +11,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,13 +20,13 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export function NavUser({
   user,

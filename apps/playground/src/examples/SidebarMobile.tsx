@@ -1,7 +1,7 @@
 import * as React from "react"
 import { AppSidebar } from "../blocks/sidebar-16/components/app-sidebar"
 import { SiteHeader } from "../blocks/sidebar-16/components/site-header"
-import { SidebarInset, SidebarProvider } from "@pereira-ui/react"
+import { SidebarInset, SidebarProvider } from "@p-ui/react"
 
 // sidebar-16 (apps/v4/registry/new-york-v4/blocks/sidebar-16/page.tsx) at phone width.
 // Same markup; the three tiles sit in one row and the tall placeholder is min-h-64 instead of min-h-[100vh] so the card has a fixed height,

@@ -1,6 +1,6 @@
 # Empty
 
-Use the Empty component to display an empty state. From shadcn/ui (new-york-v4), exported as `PereiraUI.Empty`.
+Use the Empty component to display an empty state. From shadcn/ui (new-york-v4), exported as `PUI.Empty`.
 
 ## Parts
 `Empty` › `EmptyHeader` (`EmptyMedia variant="icon"`, `EmptyTitle`, `EmptyDescription`) › `EmptyContent` (actions).

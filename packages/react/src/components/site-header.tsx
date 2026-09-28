@@ -1,6 +1,6 @@
 "use client"
 
-// Pereira UI addition — hand-written from shadcn/ui's own docs header:
+// p-ui addition — hand-written from shadcn/ui's own docs header:
 // apps/v4/components/site-header.tsx, main-nav.tsx and mobile-nav.tsx.
 // Same structure and classes; the Next.js router, page tree and docs-only
 // widgets are replaced by props.

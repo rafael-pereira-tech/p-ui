@@ -12,8 +12,8 @@ import {
   Trash2Icon,
 } from "lucide-react"
 
-import { Button } from "@pereira-ui/react"
-import { ButtonGroup } from "@pereira-ui/react"
+import { Button } from "@p-ui/react"
+import { ButtonGroup } from "@p-ui/react"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,7 +26,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function ButtonGroupDemo() {
   const [label, setLabel] = React.useState("personal")

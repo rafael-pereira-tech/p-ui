@@ -1,11 +1,11 @@
-# @pereira-ui/react
+# @p-ui/react
 
-Pereira UI's React 19 components — shadcn/ui (new-york-v4) with six base themes and two accent overlays, plus a responsive `SiteHeader`.
+p-ui's React 19 components — shadcn/ui (new-york-v4) with six base themes and two accent overlays, plus a responsive `SiteHeader`.
 
 ## Install
 
 ```bash
-pnpm add @pereira-ui/react
+pnpm add @p-ui/react
 ```
 
 Peer dependencies: `react@^19` and `react-dom@^19` (the components take `ref` as a prop, React 19 style).
@@ -14,11 +14,11 @@ Peer dependencies: `react@^19` and `react-dom@^19` (the components take `ref` as
 
 | Import | What |
 |---|---|
-| `@pereira-ui/react/styles.css` | tokens + accents + Tailwind v4 theme layer. Import after `tailwindcss` and add `@source` for `node_modules/@pereira-ui/react/dist`. |
-| `@pereira-ui/react/compiled.css` | Everything precompiled, for apps without Tailwind. |
-| `@pereira-ui/react/fonts.css` | Geist + Geist Mono `@font-face` (variable, latin). |
-| `@pereira-ui/react/tokens.css` / `accents.css` / `theme.css` | The parts of `styles.css`, if you need them separately. |
-| `@pereira-ui/react/tokens.json` | The tokens as data (the design system's source of truth). |
+| `@p-ui/react/styles.css` | tokens + accents + Tailwind v4 theme layer. Import after `tailwindcss` and add `@source` for `node_modules/@p-ui/react/dist`. |
+| `@p-ui/react/compiled.css` | Everything precompiled, for apps without Tailwind. |
+| `@p-ui/react/fonts.css` | Geist + Geist Mono `@font-face` (variable, latin). |
+| `@p-ui/react/tokens.css` / `accents.css` / `theme.css` | The parts of `styles.css`, if you need them separately. |
+| `@p-ui/react/tokens.json` | The tokens as data (the design system's source of truth). |
 
 ## Themes
 

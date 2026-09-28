@@ -17,7 +17,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function CommandDemo() {
   return (

@@ -1,8 +1,8 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/scroll-area-demo.tsx
 import * as React from "react"
 
-import { ScrollArea } from "@pereira-ui/react"
-import { Separator } from "@pereira-ui/react"
+import { ScrollArea } from "@p-ui/react"
+import { Separator } from "@p-ui/react"
 
 const tags = Array.from({ length: 50 }).map(
   (_, i, a) => `v1.2.0-beta.${a.length - i}`

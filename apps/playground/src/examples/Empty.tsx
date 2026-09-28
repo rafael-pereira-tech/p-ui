@@ -2,7 +2,7 @@
 import { IconFolderCode } from "@tabler/icons-react"
 import { ArrowUpRightIcon } from "lucide-react"
 
-import { Button } from "@pereira-ui/react"
+import { Button } from "@p-ui/react"
 import {
   Empty,
   EmptyContent,
@@ -10,7 +10,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function EmptyDemo() {
   return (

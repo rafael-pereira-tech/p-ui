@@ -1,6 +1,6 @@
 # Dialog
 
-A window overlaid on either the primary window or another dialog window, rendering the content underneath inert. From shadcn/ui (new-york-v4), exported as `PereiraUI.Dialog`.
+A window overlaid on either the primary window or another dialog window, rendering the content underneath inert. From shadcn/ui (new-york-v4), exported as `PUI.Dialog`.
 
 ## Parts
 `Dialog` › `DialogTrigger asChild` › `DialogContent` (`DialogHeader` › `DialogTitle`, `DialogDescription`; body; `DialogFooter` with `DialogClose`).

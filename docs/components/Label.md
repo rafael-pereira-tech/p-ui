@@ -1,6 +1,6 @@
 # Label
 
-Renders an accessible label associated with controls. From shadcn/ui (new-york-v4), exported as `PereiraUI.Label`.
+Renders an accessible label associated with controls. From shadcn/ui (new-york-v4), exported as `PUI.Label`.
 
 ## Consumer provides
 `htmlFor` = the control's `id`, and the label text.

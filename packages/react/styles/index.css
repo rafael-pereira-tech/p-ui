@@ -1,9 +1,9 @@
 /*
- * Pereira UI for Tailwind CSS v4 projects:
+ * p-ui for Tailwind CSS v4 projects:
  *   @import "tailwindcss";
- *   @import "@pereira-ui/react/styles.css";
- *   @import "@pereira-ui/react/fonts.css";          (optional: self-hosted Geist)
- *   @source "../node_modules/@pereira-ui/react/dist";  (path from your CSS file)
+ *   @import "@p-ui/react/styles.css";
+ *   @import "@p-ui/react/fonts.css";          (optional: self-hosted Geist)
+ *   @source "../node_modules/@p-ui/react/dist";  (path from your CSS file)
  */
 @import "./tokens.css";
 @import "./accents.css";

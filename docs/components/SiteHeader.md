@@ -1,6 +1,6 @@
 # SiteHeader
 
-Responsive top navigation for sites and docs: brand, links and actions on desktop, a full-screen Menu below 1024px. Pereira UI addition, hand-written from shadcn/ui's own docs header (apps/v4/components/site-header.tsx, main-nav.tsx, mobile-nav.tsx).
+Responsive top navigation for sites and docs: brand, links and actions on desktop, a full-screen Menu below 1024px. p-ui addition, hand-written from shadcn/ui's own docs header (apps/v4/components/site-header.tsx, main-nav.tsx, mobile-nav.tsx).
 
 ## How it responds
 - ≥1024px (`lg`): brand · ghost-button links (`aria-current` on the active one) · `actions` pushed right.

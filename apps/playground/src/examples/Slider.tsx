@@ -1,7 +1,7 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/slider-demo.tsx
-import { cn } from "@pereira-ui/react"
+import { cn } from "@p-ui/react"
 
-import { Slider } from "@pereira-ui/react"
+import { Slider } from "@p-ui/react"
 
 type SliderProps = React.ComponentProps<typeof Slider>
 

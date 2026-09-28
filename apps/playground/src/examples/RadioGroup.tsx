@@ -1,9 +1,9 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/radio-group-demo.tsx
-import { Label } from "@pereira-ui/react"
+import { Label } from "@p-ui/react"
 import {
   RadioGroup,
   RadioGroupItem,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function RadioGroupDemo() {
   return (

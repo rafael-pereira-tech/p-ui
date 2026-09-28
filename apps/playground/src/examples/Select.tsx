@@ -1,4 +1,4 @@
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@pereira-ui/react"
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@p-ui/react"
 
 export default function SelectExample({ defaultOpen = false }: { defaultOpen?: boolean }) {
   return (

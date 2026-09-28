@@ -1,6 +1,6 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/field-demo.tsx
-import { Button } from "@pereira-ui/react"
-import { Checkbox } from "@pereira-ui/react"
+import { Button } from "@p-ui/react"
+import { Checkbox } from "@p-ui/react"
 import {
   Field,
   FieldDescription,
@@ -9,16 +9,16 @@ import {
   FieldLegend,
   FieldSeparator,
   FieldSet,
-} from "@pereira-ui/react"
-import { Input } from "@pereira-ui/react"
+} from "@p-ui/react"
+import { Input } from "@p-ui/react"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@pereira-ui/react"
-import { Textarea } from "@pereira-ui/react"
+} from "@p-ui/react"
+import { Textarea } from "@p-ui/react"
 
 export default function FieldDemo() {
   return (

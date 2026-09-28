@@ -1,4 +1,4 @@
-import { Button, Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Input, Label } from "@pereira-ui/react"
+import { Button, Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Input, Label } from "@p-ui/react"
 
 export default function CardExample() {
   return (

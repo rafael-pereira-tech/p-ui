@@ -1,5 +1,5 @@
 {
-  "name": "pereira-ui-monorepo",
+  "name": "p-ui-monorepo",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.28.0",
@@ -7,12 +7,12 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "pnpm --filter @pereira-ui/react build && pnpm --filter playground build",
-    "dev": "pnpm --filter @pereira-ui/react build && pnpm --filter playground dev",
+    "build": "pnpm --filter @p-ui/react build && pnpm --filter playground build",
+    "dev": "pnpm --filter @p-ui/react build && pnpm --filter playground dev",
     "lint": "eslint .",
     "typecheck": "pnpm -r typecheck",
-    "tokens": "pnpm --filter @pereira-ui/react tokens",
-    "ds": "pnpm --filter @pereira-ui/react build && node scripts/build-ds.mjs",
+    "tokens": "pnpm --filter @p-ui/react tokens",
+    "ds": "pnpm --filter @p-ui/react build && node scripts/build-ds.mjs",
     "check": "pnpm lint && pnpm build && pnpm typecheck && node scripts/build-ds.mjs"
   },
   "devDependencies": {

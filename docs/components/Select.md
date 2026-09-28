@@ -1,6 +1,6 @@
 # Select
 
-Displays a list of options for the user to pick from—triggered by a button. From shadcn/ui (new-york-v4), exported as `PereiraUI.Select`.
+Displays a list of options for the user to pick from—triggered by a button. From shadcn/ui (new-york-v4), exported as `PUI.Select`.
 
 ## Parts
 `Select` › `SelectTrigger` (`SelectValue placeholder`) › `SelectContent` › `SelectGroup` (`SelectLabel`, `SelectItem value`, `SelectSeparator`).

@@ -1,6 +1,6 @@
 # Slider
 
-An input where the user selects a value from within a given range. From shadcn/ui (new-york-v4), exported as `PereiraUI.Slider`.
+An input where the user selects a value from within a given range. From shadcn/ui (new-york-v4), exported as `PUI.Slider`.
 
 ## Consumer provides
 `defaultValue`/`value` as an array (`[50]`, or two values for a range), `min`, `max`, `step`, `onValueChange`, an accessible label.

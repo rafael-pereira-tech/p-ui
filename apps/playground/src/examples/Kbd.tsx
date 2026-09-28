@@ -1,5 +1,5 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/kbd-demo.tsx
-import { Kbd, KbdGroup } from "@pereira-ui/react"
+import { Kbd, KbdGroup } from "@p-ui/react"
 
 export default function KbdDemo() {
   return (

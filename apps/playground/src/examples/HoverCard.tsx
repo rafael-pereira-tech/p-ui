@@ -4,13 +4,13 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@pereira-ui/react"
-import { Button } from "@pereira-ui/react"
+} from "@p-ui/react"
+import { Button } from "@p-ui/react"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function HoverCardDemo() {
   return (

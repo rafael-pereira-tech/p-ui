@@ -46,7 +46,7 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          BASE_PATH: /pereira-ui/
+          BASE_PATH: /p-ui/
 
       - name: Disable Jekyll
         run: touch apps/playground/dist/.nojekyll

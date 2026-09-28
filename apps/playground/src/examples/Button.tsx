@@ -1,4 +1,4 @@
-import { Button } from "@pereira-ui/react"
+import { Button } from "@p-ui/react"
 
 function Row({ label, accent }: { label: string; accent?: "blue" | "orange" }) {
   return (

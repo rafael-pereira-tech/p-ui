@@ -1,9 +1,9 @@
-// Builds the Pereira UI design-system artifact's files from this repository.
+// Builds the p-ui design-system artifact's files from this repository.
 //
 //   pnpm ds            → design-system/out/project/**
 //
 // The output mirrors the artifact's `project/` folder: tokens.json, README.md, the
-// component guidelines and live previews, the IIFE bundle (window.PereiraUI), its
+// component guidelines and live previews, the IIFE bundle (window.PUI), its
 // stylesheet, types, fonts, the React 19 runtime and the cover. It does NOT write
 // project/design-system.json — that index belongs to the artifact and is updated by
 // whoever publishes (see docs/design-system-sync.md).
@@ -25,7 +25,7 @@ const PG = path.join(ROOT, "apps/playground")
 const EX = path.join(PG, "src/examples")
 const OUT = path.join(ROOT, "design-system/out/project")
 const SHIMS = path.join(ROOT, "scripts/ds-shims")
-const NAMESPACE = "PereiraUI"
+const NAMESPACE = "PUI"
 const shim = (f) => path.join(SHIMS, f)
 const pgRequire = createRequire(path.join(PG, "package.json"))
 
@@ -36,7 +36,7 @@ const sha = (() => {
     return "working-tree"
   }
 })()
-const repo = "rafael-pereira-tech/pereira-ui"
+const repo = "rafael-pereira-tech/p-ui"
 
 fs.rmSync(OUT, { recursive: true, force: true })
 fs.mkdirSync(path.join(OUT, "components/lib"), { recursive: true })
@@ -122,7 +122,7 @@ const previewPlugin = {
   name: "preview",
   setup(b) {
     globalsPlugin.setup(b)
-    b.onResolve({ filter: /^@pereira-ui\/react$/ }, () => ({ path: shim("pereira.js") }))
+    b.onResolve({ filter: /^@p-ui\/react$/ }, () => ({ path: shim("p-ui.js") }))
   },
 }
 try {

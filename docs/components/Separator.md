@@ -1,6 +1,6 @@
 # Separator
 
-Visually or semantically separates content. From shadcn/ui (new-york-v4), exported as `PereiraUI.Separator`.
+Visually or semantically separates content. From shadcn/ui (new-york-v4), exported as `PUI.Separator`.
 
 ## Consumer provides
 `orientation`: `horizontal | vertical` (vertical needs a parent with height); `decorative` (default true) — set false when it separates semantic groups.

@@ -1,4 +1,4 @@
-import { Alert, AlertDescription, AlertTitle } from "@pereira-ui/react"
+import { Alert, AlertDescription, AlertTitle } from "@p-ui/react"
 import { AlertCircleIcon, CheckCircle2Icon } from "lucide-react"
 
 export default function AlertExample() {

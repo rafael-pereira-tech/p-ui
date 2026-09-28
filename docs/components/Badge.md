@@ -1,6 +1,6 @@
 # Badge
 
-Displays a badge or a component that looks like a badge. From shadcn/ui (new-york-v4), exported as `PereiraUI.Badge`.
+Displays a badge or a component that looks like a badge. From shadcn/ui (new-york-v4), exported as `PUI.Badge`.
 
 ## When to use
 Short status or metadata labels (1–2 words) next to titles, in tables and cards. Not clickable by default; use `asChild` with an `<a>` for a link badge.

@@ -1,4 +1,4 @@
-import { Button, Tooltip, TooltipContent, TooltipTrigger } from "@pereira-ui/react"
+import { Button, Tooltip, TooltipContent, TooltipTrigger } from "@p-ui/react"
 
 export default function TooltipExample({ defaultOpen = false }: { defaultOpen?: boolean }) {
   return (
