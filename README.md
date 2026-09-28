@@ -6,7 +6,7 @@ A design system built on [shadcn/ui](https://ui.shadcn.com) (v4, `base-nova` sty
 |---|---|
 | `packages/react` | **`@p-ui/react`** — 45 React 19 components, hooks, tokens and styles (Tailwind CSS v4) |
 | `apps/playground` | Vite app with every component live, the app-shell and site-header layouts, and a token browser; deployed to GitHub Pages |
-| `docs/` | The brand book (`README.md`) and one guideline file per component — also the design system's text |
+| `docs/` | The brand book (`README.md`), one guideline file per component and per app-kit piece (`kit/`) — also the design system's text |
 | `scripts/build-ds.mjs` | Rebuilds the p-ui design-system artifact's files from this repo (`pnpm ds`) |
 
 ## Quick start
@@ -34,6 +34,8 @@ npx shadcn@latest add @p-ui/button @p-ui/dialog # any component; dependencies co
 ```
 
 New project: `npx shadcn@latest init -t vite -b base -p nova` (Vite + Tailwind on the same `base-nova` style p-ui uses), then `add @p-ui/style` and the components as above. Set `data-theme` / `data-accent` on `<html>`. The `@custom-variant dark (&:is(.dark *))` line that `init` writes can go: `@p-ui/style` adds its own, which also covers `.dark`, and Tailwind keeps the last definition.
+
+The app kit (`docs/kit/`: `@p-ui/page-shell`, `@p-ui/page-header`, `@p-ui/empty-state`, `@p-ui/error-state`, `@p-ui/table-skeleton`, `@p-ui/route-error-boundary`) installs the same way and lands in `components/`.
 
 `@p-ui/style` writes the same CSS the package ships (`packages/react/styles/*.css`) into the project's stylesheet: tokens for the six themes and two accents, the `@theme` mapping, the custom variants and utilities the components need, and the Geist fonts via `@fontsource-variable`. The catalog is `r/registry.json`; `pnpm registry` rebuilds it from `packages/react` (`scripts/build-registry.mjs`) and it deploys with the playground.
 

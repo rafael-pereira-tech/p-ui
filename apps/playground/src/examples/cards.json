@@ -239,5 +239,33 @@
     "props": {
       "defaultOpen": true
     }
+  },
+  "PageHeader": {
+    "group": "Kit",
+    "height": 300,
+    "width": 800,
+    "kit": true
+  },
+  "EmptyState": {
+    "group": "Kit",
+    "height": 280,
+    "kit": true
+  },
+  "ErrorState": {
+    "group": "Kit",
+    "height": 120,
+    "kit": true
+  },
+  "TableSkeleton": {
+    "group": "Kit",
+    "height": 230,
+    "kit": true
+  },
+  "RouteErrorBoundary": {
+    "group": "Kit",
+    "height": 360,
+    "width": 800,
+    "subtitle": "Break the widget to see the fallback",
+    "kit": true
   }
 }
