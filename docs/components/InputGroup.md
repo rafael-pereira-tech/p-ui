@@ -1,6 +1,6 @@
 # InputGroup
 
-Add addons, buttons, and helper content to inputs. From shadcn/ui (new-york-v4), exported as `PereiraUI.InputGroup`.
+Add addons, buttons, and helper content to inputs. From shadcn/ui (new-york-v4), exported as `PUI.InputGroup`.
 
 ## Parts
 `InputGroup` › `InputGroupInput` or `InputGroupTextarea` + `InputGroupAddon align` (`inline-start` | `inline-end` | `block-start` | `block-end`) › `InputGroupText`, `InputGroupButton`, icons, Kbd, Spinner.

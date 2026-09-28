@@ -1,4 +1,4 @@
-import { Badge } from "@pereira-ui/react"
+import { Badge } from "@p-ui/react"
 
 export default function BadgeExample() {
   return (

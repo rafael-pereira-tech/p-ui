@@ -1,9 +1,9 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/drawer-dialog.tsx
 import * as React from "react"
-import { cn } from "@pereira-ui/react"
+import { cn } from "@p-ui/react"
 
-import { useMediaQuery } from "@pereira-ui/react"
-import { Button } from "@pereira-ui/react"
+import { useMediaQuery } from "@p-ui/react"
+import { Button } from "@p-ui/react"
 import {
   Dialog,
   DialogContent,
@@ -11,7 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 import {
   Drawer,
   DrawerClose,
@@ -21,9 +21,9 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@pereira-ui/react"
-import { Input } from "@pereira-ui/react"
-import { Label } from "@pereira-ui/react"
+} from "@p-ui/react"
+import { Input } from "@p-ui/react"
+import { Label } from "@p-ui/react"
 
 export default function DrawerDialogDemo() {
   const [open, setOpen] = React.useState(false)

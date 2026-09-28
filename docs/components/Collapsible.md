@@ -1,6 +1,6 @@
 # Collapsible
 
-An interactive component which expands/collapses a panel. From shadcn/ui (new-york-v4), exported as `PereiraUI.Collapsible`.
+An interactive component which expands/collapses a panel. From shadcn/ui (new-york-v4), exported as `PUI.Collapsible`.
 
 ## Parts
 `Collapsible open onOpenChange` › `CollapsibleTrigger asChild` › `CollapsibleContent`.

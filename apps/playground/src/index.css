@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@import "@pereira-ui/react/styles.css";
-@import "@pereira-ui/react/fonts.css";
+@import "@p-ui/react/styles.css";
+@import "@p-ui/react/fonts.css";
 
 /* Let Tailwind see the classes used inside the package's components. */
-@source "../node_modules/@pereira-ui/react/dist";
+@source "../node_modules/@p-ui/react/dist";

@@ -1,6 +1,6 @@
 # Alert
 
-Displays a callout for user attention. From shadcn/ui (new-york-v4), exported as `PereiraUI.Alert`.
+Displays a callout for user attention. From shadcn/ui (new-york-v4), exported as `PUI.Alert`.
 
 ## Parts
 `Alert variant` › optional lucide icon › `AlertTitle` › `AlertDescription`.

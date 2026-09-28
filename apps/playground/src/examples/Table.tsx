@@ -8,7 +8,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 const invoices = [
   {

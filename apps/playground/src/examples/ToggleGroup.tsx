@@ -4,7 +4,7 @@ import { Bold, Italic, Underline } from "lucide-react"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function ToggleGroupDemo() {
   return (

@@ -1,7 +1,7 @@
 {
-  "name": "@pereira-ui/react",
+  "name": "@p-ui/react",
   "version": "0.1.0",
-  "description": "Pereira UI — shadcn/ui components with Neutral/Zinc/Stone themes and Blue/Orange accents, for React 19 and Tailwind CSS v4.",
+  "description": "p-ui — shadcn/ui components with Neutral/Zinc/Stone themes and Blue/Orange accents, for React 19 and Tailwind CSS v4.",
   "license": "UNLICENSED",
   "type": "module",
   "sideEffects": ["*.css"],
@@ -18,7 +18,7 @@
     "./accents.css": "./styles/accents.css",
     "./theme.css": "./styles/theme.css",
     "./fonts.css": "./styles/fonts.css",
-    "./compiled.css": "./dist/pereira-ui.css",
+    "./compiled.css": "./dist/p-ui.css",
     "./tokens.json": "./tokens.json",
     "./package.json": "./package.json"
   },
@@ -54,5 +54,5 @@
     "typescript": "~5.9.0"
   },
   "publishConfig": { "access": "restricted" },
-  "repository": { "type": "git", "url": "git+https://github.com/rafael-pereira-tech/pereira-ui.git", "directory": "packages/react" }
+  "repository": { "type": "git", "url": "git+https://github.com/rafael-pereira-tech/p-ui.git", "directory": "packages/react" }
 }

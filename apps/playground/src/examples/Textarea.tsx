@@ -1,4 +1,4 @@
-import { Label, Textarea } from "@pereira-ui/react"
+import { Label, Textarea } from "@p-ui/react"
 
 export default function TextareaExample() {
   return (

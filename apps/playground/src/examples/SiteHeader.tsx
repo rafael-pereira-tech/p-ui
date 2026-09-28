@@ -1,4 +1,4 @@
-import { Button, Kbd, Separator, SiteHeader } from "@pereira-ui/react"
+import { Button, Kbd, Separator, SiteHeader } from "@p-ui/react"
 import { SearchIcon } from "lucide-react"
 
 const items = [
@@ -17,7 +17,7 @@ export default function SiteHeaderDemo({ menuOpen = false }: { menuOpen?: boolea
     <div className="bg-muted/40 pb-6">
       <SiteHeader
         className="border-b"
-        brand={<><span className="flex size-6 items-center justify-center rounded-md bg-primary text-xs font-bold text-primary-foreground">P</span>Pereira UI</>}
+        brand={<><span className="flex size-6 items-center justify-center rounded-md bg-primary text-xs font-bold text-primary-foreground">P</span>p-ui</>}
         items={items}
         sections={sections}
         onNavigate={() => {}}

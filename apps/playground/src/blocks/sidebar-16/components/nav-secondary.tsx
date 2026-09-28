@@ -7,7 +7,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export function NavSecondary({
   items,

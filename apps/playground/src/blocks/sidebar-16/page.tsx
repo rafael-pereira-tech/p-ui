@@ -4,7 +4,7 @@ import { SiteHeader } from "./components/site-header"
 import {
   SidebarInset,
   SidebarProvider,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export const iframeHeight = "800px"
 

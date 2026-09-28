@@ -1,12 +1,12 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/popover-demo.tsx
-import { Button } from "@pereira-ui/react"
-import { Input } from "@pereira-ui/react"
-import { Label } from "@pereira-ui/react"
+import { Button } from "@p-ui/react"
+import { Input } from "@p-ui/react"
+import { Label } from "@p-ui/react"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function PopoverDemo() {
   return (

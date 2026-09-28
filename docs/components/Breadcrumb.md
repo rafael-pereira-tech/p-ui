@@ -1,6 +1,6 @@
 # Breadcrumb
 
-Displays the path to the current resource using a hierarchy of links. From shadcn/ui (new-york-v4), exported as `PereiraUI.Breadcrumb`.
+Displays the path to the current resource using a hierarchy of links. From shadcn/ui (new-york-v4), exported as `PUI.Breadcrumb`.
 
 ## Parts
 `Breadcrumb` › `BreadcrumbList` › `BreadcrumbItem` (`BreadcrumbLink href|asChild`, or `BreadcrumbPage` for the current one), `BreadcrumbSeparator`, `BreadcrumbEllipsis` (collapse middle levels, often into a DropdownMenu).

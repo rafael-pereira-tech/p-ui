@@ -1,4 +1,4 @@
-import { Input, Label } from "@pereira-ui/react"
+import { Input, Label } from "@p-ui/react"
 
 export default function InputExample() {
   return (

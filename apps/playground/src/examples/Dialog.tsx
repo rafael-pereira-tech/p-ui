@@ -1,4 +1,4 @@
-import { Button, Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger, Input, Label } from "@pereira-ui/react"
+import { Button, Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger, Input, Label } from "@p-ui/react"
 
 export default function DialogExample({ defaultOpen = false }: { defaultOpen?: boolean }) {
   return (

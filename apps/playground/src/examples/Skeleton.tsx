@@ -1,5 +1,5 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/skeleton-demo.tsx
-import { Skeleton } from "@pereira-ui/react"
+import { Skeleton } from "@p-ui/react"
 
 export default function SkeletonDemo() {
   return (

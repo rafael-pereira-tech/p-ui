@@ -1,6 +1,6 @@
 # Accordion
 
-A vertically stacked set of interactive headings that each reveal a section of content. From shadcn/ui (new-york-v4), exported as `PereiraUI.Accordion`.
+A vertically stacked set of interactive headings that each reveal a section of content. From shadcn/ui (new-york-v4), exported as `PUI.Accordion`.
 
 ## Parts
 `Accordion type="single" collapsible defaultValue` (or `type="multiple"`) › `AccordionItem value` › `AccordionTrigger` + `AccordionContent`.

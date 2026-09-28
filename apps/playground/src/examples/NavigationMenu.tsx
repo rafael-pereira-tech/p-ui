@@ -3,7 +3,7 @@ import * as React from "react"
 import { Link } from "../lib/link"
 import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
 
-import { useIsMobile } from "@pereira-ui/react"
+import { useIsMobile } from "@p-ui/react"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,7 +12,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 const components: { title: string; href: string; description: string }[] = [
   {

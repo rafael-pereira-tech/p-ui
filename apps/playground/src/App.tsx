@@ -15,7 +15,7 @@ import {
   ToggleGroup,
   ToggleGroupItem,
   TooltipProvider,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 import { ArrowLeftIcon, PaletteIcon } from "lucide-react"
 
 import cards from "./examples/cards.json"
@@ -91,7 +91,7 @@ function ComponentsPage() {
       <div className="flex flex-col gap-2">
         <h1 className="text-4xl font-extrabold tracking-tight text-balance">Components</h1>
         <p className="text-xl text-muted-foreground">
-          All {Object.keys(EXAMPLES).length - 2} Pereira UI components, live. Switch theme and accent in the header.
+          All {Object.keys(EXAMPLES).length - 2} p-ui components, live. Switch theme and accent in the header.
         </p>
       </div>
       {groups.map(({ group, names }) => (
@@ -192,7 +192,7 @@ export function App() {
           brand={
             <a href="#/components" className="flex items-center gap-2">
               <span className="flex size-6 items-center justify-center rounded-md bg-primary text-xs font-bold text-primary-foreground">P</span>
-              Pereira UI
+              p-ui
               <Badge variant="secondary" className="font-mono">0.1</Badge>
             </a>
           }

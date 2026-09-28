@@ -32,7 +32,7 @@ importers:
 
   apps/playground:
     dependencies:
-      '@pereira-ui/react':
+      '@p-ui/react':
         specifier: workspace:*
         version: link:../../packages/react
       '@tabler/icons-react':

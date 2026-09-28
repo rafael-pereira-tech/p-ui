@@ -1,6 +1,6 @@
 # Button
 
-Displays a button or a component that looks like a button. From shadcn/ui (new-york-v4), exported as `PereiraUI.Button`.
+Displays a button or a component that looks like a button. From shadcn/ui (new-york-v4), exported as `PUI.Button`.
 
 ## When to use
 - `default` for the one primary action in a view; `secondary` beside it; `outline` for neutral actions on busy surfaces; `ghost` in toolbars and menus; `link` for inline navigation; `destructive` only for irreversible actions (delete, revoke).

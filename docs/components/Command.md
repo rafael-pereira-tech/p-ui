@@ -1,6 +1,6 @@
 # Command
 
-Command menu for search and quick actions (cmdk). From shadcn/ui (new-york-v4), exported as `PereiraUI.Command`.
+Command menu for search and quick actions (cmdk). From shadcn/ui (new-york-v4), exported as `PUI.Command`.
 
 ## Parts
 `Command` › `CommandInput`, `CommandList` › `CommandEmpty`, `CommandGroup heading` › `CommandItem onSelect` (+ `CommandShortcut`), `CommandSeparator`. `CommandDialog open onOpenChange` wraps it in a Dialog for ⌘K palettes.

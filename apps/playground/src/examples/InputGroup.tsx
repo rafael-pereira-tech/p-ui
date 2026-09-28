@@ -7,7 +7,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 import {
   InputGroup,
   InputGroupAddon,
@@ -15,13 +15,13 @@ import {
   InputGroupInput,
   InputGroupText,
   InputGroupTextarea,
-} from "@pereira-ui/react"
-import { Separator } from "@pereira-ui/react"
+} from "@p-ui/react"
+import { Separator } from "@p-ui/react"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function InputGroupDemo() {
   return (

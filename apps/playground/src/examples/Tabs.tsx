@@ -1,4 +1,4 @@
-import { Card, CardDescription, CardHeader, CardTitle, Tabs, TabsContent, TabsList, TabsTrigger } from "@pereira-ui/react"
+import { Card, CardDescription, CardHeader, CardTitle, Tabs, TabsContent, TabsList, TabsTrigger } from "@p-ui/react"
 
 export default function TabsExample() {
   return (

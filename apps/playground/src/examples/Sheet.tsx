@@ -1,7 +1,7 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/sheet-demo.tsx
-import { Button } from "@pereira-ui/react"
-import { Input } from "@pereira-ui/react"
-import { Label } from "@pereira-ui/react"
+import { Button } from "@p-ui/react"
+import { Input } from "@p-ui/react"
+import { Label } from "@p-ui/react"
 import {
   Sheet,
   SheetClose,
@@ -11,7 +11,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function SheetDemo() {
   return (

@@ -1,4 +1,4 @@
-import tokens from "@pereira-ui/react/tokens.json"
+import tokens from "@p-ui/react/tokens.json"
 
 type Tok = { name: string; usage?: string }
 

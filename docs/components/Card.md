@@ -1,6 +1,6 @@
 # Card
 
-Displays a card with header, content, and footer. From shadcn/ui (new-york-v4), exported as `PereiraUI.Card`.
+Displays a card with header, content, and footer. From shadcn/ui (new-york-v4), exported as `PUI.Card`.
 
 ## Parts
 `Card` › `CardHeader` (`CardTitle`, `CardDescription`, optional `CardAction` pinned top-right) › `CardContent` › `CardFooter`.

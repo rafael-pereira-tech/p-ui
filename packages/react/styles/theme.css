@@ -1,7 +1,7 @@
 /*
- * Pereira UI — Tailwind CSS v4 theme layer.
+ * p-ui — Tailwind CSS v4 theme layer.
  * Maps the semantic tokens (tokens.css) to Tailwind utilities, the way shadcn/ui's globals.css does.
- * Import through "@pereira-ui/react/styles.css" after "tailwindcss".
+ * Import through "@p-ui/react/styles.css" after "tailwindcss".
  */
 @import "tw-animate-css";
 

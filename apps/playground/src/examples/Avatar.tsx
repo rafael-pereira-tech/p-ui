@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback } from "@pereira-ui/react"
+import { Avatar, AvatarFallback } from "@p-ui/react"
 
 export default function AvatarExample() {
   return (

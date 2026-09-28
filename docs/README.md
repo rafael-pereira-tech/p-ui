@@ -1,4 +1,4 @@
-Pereira UI is shadcn/ui's semantic token set and component styling, organised around theme variation: three base palettes (Neutral, Zinc, Stone), each in light and dark, plus two accent overlays (Blue, Orange) that can sit on any of them. Interfaces built with it are quiet, grey-first and hairline-bordered; colour is spent on the one primary action.
+p-ui is shadcn/ui's semantic token set and component styling, organised around theme variation: three base palettes (Neutral, Zinc, Stone), each in light and dark, plus two accent overlays (Blue, Orange) that can sit on any of them. Interfaces built with it are quiet, grey-first and hairline-bordered; colour is spent on the one primary action.
 
 ## Theming model
 
@@ -54,7 +54,7 @@ Pereira UI is shadcn/ui's semantic token set and component styling, organised ar
 
 ## Components
 
-- Load `components/bundle.css` after the tokens and use `window.PereiraUI.*` (React 19). These are shadcn/ui's new-york-v4 components as-is, plus SiteHeader — 45 families:
+- Load `components/bundle.css` after the tokens and use `window.PUI.*` (React 19). These are shadcn/ui's new-york-v4 components as-is, plus SiteHeader — 45 families:
   - Actions: Button, ButtonGroup, Toggle, ToggleGroup.
   - Forms: Field, Label, Input, InputGroup, Textarea, Select, Checkbox, RadioGroup, Switch, Slider.
   - Navigation and layout: Sidebar, SiteHeader, NavigationMenu, Breadcrumb, Tabs, Pagination, Command.
@@ -63,7 +63,7 @@ Pereira UI is shadcn/ui's semantic token set and component styling, organised ar
   - Feedback: Alert, Toaster, Progress, Spinner, Skeleton, Empty.
   - Hooks and helpers: `useIsMobile`, `useMediaQuery`, `useSidebar`, `toast`, `cn`.
 - `SiteHeader` is the one intentional addition: shadcn ships its responsive docs header only inside its website, not as a registry component, so it is rebuilt here from that code as a reusable component.
-- In code, use the `@pereira-ui/react` package (repository `rafael-pereira-tech/pereira-ui`): `import { Button } from "@pereira-ui/react"`, and in the app stylesheet `@import "tailwindcss"; @import "@pereira-ui/react/styles.css";` plus `@source` for the package's `dist`. Without Tailwind, import `@pereira-ui/react/compiled.css`. Set `data-theme` / `data-accent` on `<html>`.
+- In code, use the `@p-ui/react` package (repository `rafael-pereira-tech/p-ui`): `import { Button } from "@p-ui/react"`, and in the app stylesheet `@import "tailwindcss"; @import "@p-ui/react/styles.css";` plus `@source` for the package's `dist`. Without Tailwind, import `@p-ui/react/compiled.css`. Set `data-theme` / `data-accent` on `<html>`.
 - The token names are shadcn/ui's, so components copied from shadcn keep working on these tokens unchanged.
 - Wrap the app once in `TooltipProvider` and mount one `Toaster`. Build forms with `Field` (label, description, error). Every overlay gets its title.
 
@@ -71,7 +71,7 @@ Pereira UI is shadcn/ui's semantic token set and component styling, organised ar
 
 - lucide-react, 16px inside Buttons, menus, tabs and Select items (auto-sized), 12px in Badges, `currentColor` stroke at the default 2px. Any SVG icon set works the same way (Tabler, Phosphor, Remix, Hugeicons); icon fonts do not get the auto-sizing. No emoji as UI.
 - Icon-only Buttons (`size="icon"`) always carry `aria-label`.
-- There is no logo yet: set "Pereira UI" in Geist semibold wherever a mark would go.
+- There is no logo yet: set "p-ui" in Geist semibold wherever a mark would go.
 
 ## Not synced
 

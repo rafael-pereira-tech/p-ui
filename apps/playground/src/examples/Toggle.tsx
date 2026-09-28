@@ -1,7 +1,7 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/toggle-demo.tsx
 import { BookmarkIcon } from "lucide-react"
 
-import { Toggle } from "@pereira-ui/react"
+import { Toggle } from "@p-ui/react"
 
 export default function ToggleDemo() {
   return (

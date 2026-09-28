@@ -1,6 +1,6 @@
 # Checkbox
 
-A control that allows the user to toggle between checked and not checked. From shadcn/ui (new-york-v4), exported as `PereiraUI.Checkbox`.
+A control that allows the user to toggle between checked and not checked. From shadcn/ui (new-york-v4), exported as `PUI.Checkbox`.
 
 ## Consumer provides
 `checked`/`defaultChecked`, `onCheckedChange(checked)`, `id` for a Label, `disabled`, `aria-invalid`.

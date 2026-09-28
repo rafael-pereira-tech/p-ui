@@ -1,6 +1,6 @@
 # AlertDialog
 
-A modal dialog that interrupts the user with important content and expects a response. From shadcn/ui (new-york-v4), exported as `PereiraUI.AlertDialog`.
+A modal dialog that interrupts the user with important content and expects a response. From shadcn/ui (new-york-v4), exported as `PUI.AlertDialog`.
 
 ## Parts
 `AlertDialog` › `AlertDialogTrigger asChild` › `AlertDialogContent` (`AlertDialogHeader` › `AlertDialogTitle`, `AlertDialogDescription`; `AlertDialogFooter` › `AlertDialogCancel`, `AlertDialogAction`).

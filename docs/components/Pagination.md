@@ -1,6 +1,6 @@
 # Pagination
 
-Pagination with page navigation, next and previous links. From shadcn/ui (new-york-v4), exported as `PereiraUI.Pagination`.
+Pagination with page navigation, next and previous links. From shadcn/ui (new-york-v4), exported as `PUI.Pagination`.
 
 ## Parts
 `Pagination` › `PaginationContent` › `PaginationItem` › `PaginationPrevious`, `PaginationLink isActive`, `PaginationEllipsis`, `PaginationNext`.

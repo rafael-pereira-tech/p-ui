@@ -1,6 +1,6 @@
 # Table
 
-A responsive table component. From shadcn/ui (new-york-v4), exported as `PereiraUI.Table`.
+A responsive table component. From shadcn/ui (new-york-v4), exported as `PUI.Table`.
 
 ## Parts
 `Table` (wraps in a horizontal-scroll container) › `TableCaption`, `TableHeader` › `TableRow` › `TableHead`; `TableBody` › `TableRow` › `TableCell`; `TableFooter`.

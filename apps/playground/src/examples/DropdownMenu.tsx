@@ -1,5 +1,5 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/dropdown-menu-demo.tsx
-import { Button } from "@pereira-ui/react"
+import { Button } from "@p-ui/react"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,7 +13,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function DropdownMenuDemo() {
   return (

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Button, toast, Toaster } from "@pereira-ui/react"
+import { Button, toast, Toaster } from "@p-ui/react"
 
 // shadcn's sonner-demo plus the <Toaster /> an app mounts once.
 // `autoShow` fires one toast on load (used by the design-system preview).

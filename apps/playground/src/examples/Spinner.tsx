@@ -4,8 +4,8 @@ import {
   ItemContent,
   ItemMedia,
   ItemTitle,
-} from "@pereira-ui/react"
-import { Spinner } from "@pereira-ui/react"
+} from "@p-ui/react"
+import { Spinner } from "@p-ui/react"
 
 export default function SpinnerDemo() {
   return (

@@ -1,6 +1,6 @@
 # Avatar
 
-An image element with a fallback for representing the user. From shadcn/ui (new-york-v4), exported as `PereiraUI.Avatar`.
+An image element with a fallback for representing the user. From shadcn/ui (new-york-v4), exported as `PUI.Avatar`.
 
 ## Parts
 `Avatar size` › `AvatarImage src alt` › `AvatarFallback` (initials); also `AvatarBadge`, `AvatarGroup`, `AvatarGroupCount`.

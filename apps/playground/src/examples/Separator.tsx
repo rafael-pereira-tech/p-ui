@@ -1,4 +1,4 @@
-import { Separator } from "@pereira-ui/react"
+import { Separator } from "@p-ui/react"
 
 export default function SeparatorExample() {
   return (

@@ -7,7 +7,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function PaginationDemo() {
   return (

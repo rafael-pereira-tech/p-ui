@@ -1,4 +1,4 @@
-import { Label, Switch } from "@pereira-ui/react"
+import { Label, Switch } from "@p-ui/react"
 
 export default function SwitchExample() {
   return (

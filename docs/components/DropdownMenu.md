@@ -1,6 +1,6 @@
 # DropdownMenu
 
-Displays a menu to the user — such as a set of actions or functions — triggered by a button. From shadcn/ui (new-york-v4), exported as `PereiraUI.DropdownMenu`.
+Displays a menu to the user — such as a set of actions or functions — triggered by a button. From shadcn/ui (new-york-v4), exported as `PUI.DropdownMenu`.
 
 ## Parts
 `DropdownMenu` › `DropdownMenuTrigger asChild` › `DropdownMenuContent align` › `DropdownMenuLabel`, `DropdownMenuGroup`, `DropdownMenuItem variant`, `DropdownMenuCheckboxItem`, `DropdownMenuRadioGroup`/`RadioItem`, `DropdownMenuSeparator`, `DropdownMenuShortcut`, `DropdownMenuSub` (`SubTrigger`, `SubContent`).

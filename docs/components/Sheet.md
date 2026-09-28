@@ -1,6 +1,6 @@
 # Sheet
 
-Extends the Dialog component to display content that complements the main content of the screen — a side panel. From shadcn/ui (new-york-v4), exported as `PereiraUI.Sheet`.
+Extends the Dialog component to display content that complements the main content of the screen — a side panel. From shadcn/ui (new-york-v4), exported as `PUI.Sheet`.
 
 ## When to use
 Side panels: filters, details of a selected row, edit forms that keep the page visible, and the mobile navigation menu. For a short confirmation use AlertDialog; for a phone-first bottom panel use Drawer.

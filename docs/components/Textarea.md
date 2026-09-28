@@ -1,6 +1,6 @@
 # Textarea
 
-Displays a form textarea or a component that looks like a textarea. From shadcn/ui (new-york-v4), exported as `PereiraUI.Textarea`.
+Displays a form textarea or a component that looks like a textarea. From shadcn/ui (new-york-v4), exported as `PUI.Textarea`.
 
 ## Consumer provides
 Native textarea props and an `id` for its Label. It auto-grows with content (`field-sizing: content`, min-h-16).

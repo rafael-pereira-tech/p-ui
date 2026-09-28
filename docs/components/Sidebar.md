@@ -1,6 +1,6 @@
 # Sidebar
 
-A composable, themeable and customizable sidebar component — the app shell's navigation, collapsible on desktop and a Sheet on mobile. From shadcn/ui (new-york-v4), exported as `PereiraUI.Sidebar`.
+A composable, themeable and customizable sidebar component — the app shell's navigation, collapsible on desktop and a Sheet on mobile. From shadcn/ui (new-york-v4), exported as `PUI.Sidebar`.
 
 ## How it responds
 - Desktop (≥768px): a fixed 16rem column. `collapsible="offcanvas"` slides it away, `"icon"` shrinks it to a 3rem icon rail, `"none"` keeps it.

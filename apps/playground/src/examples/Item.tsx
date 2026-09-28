@@ -1,7 +1,7 @@
 // From shadcn/ui: apps/v4/registry/new-york-v4/examples/item-demo.tsx
 import { BadgeCheckIcon, ChevronRightIcon } from "lucide-react"
 
-import { Button } from "@pereira-ui/react"
+import { Button } from "@p-ui/react"
 import {
   Item,
   ItemActions,
@@ -9,7 +9,7 @@ import {
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@pereira-ui/react"
+} from "@p-ui/react"
 
 export default function ItemDemo() {
   return (

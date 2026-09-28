@@ -1,6 +1,6 @@
 # Popover
 
-Displays rich content in a portal, triggered by a button. From shadcn/ui (new-york-v4), exported as `PereiraUI.Popover`.
+Displays rich content in a portal, triggered by a button. From shadcn/ui (new-york-v4), exported as `PUI.Popover`.
 
 ## Parts
 `Popover` › `PopoverTrigger asChild` › `PopoverContent align side sideOffset`.
