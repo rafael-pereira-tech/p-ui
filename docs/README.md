@@ -67,6 +67,16 @@ p-ui is shadcn/ui's semantic token set and component styling, organised around t
 - The token names are shadcn/ui's, so components copied from shadcn keep working on these tokens unchanged.
 - Wrap the app once in `TooltipProvider` and mount one `Toaster`. Build forms with `Field` (label, description, error). Every overlay gets its title.
 
+## App kit
+
+Composed pieces every product page needs, built only from the primitives and tokens above. Copy them in with `npx shadcn@latest add @p-ui/<name>`; they land in `components/`, not `components/ui/`. Copy is English by default and every string is a prop, so products localise at the call site; nothing depends on a router or an error reporter, links and handlers are passed in.
+
+- Page frame: `PageShell` (the padded, centred `<main>`, `width` for the reading width) and `PageHeader` (eyebrow, title, meta, description, actions, and children for KPIs, tabs or filters).
+- The three states every list needs: `TableSkeleton` while loading, `EmptyState` (`no-data` or `no-results`, with the next step) when there is nothing, `ErrorState` (destructive Alert with retry) when it failed.
+- `RouteErrorBoundary` around each route outlet and independent widget: `scope` and `onError` for Sentry or PostHog, retry and reload in the fallback.
+
+Guidelines per piece live in `docs/kit/`.
+
 ## Iconography
 
 - lucide-react, 16px inside Buttons, menus, tabs and Select items (auto-sized), 12px in Badges, `currentColor` stroke at the default 2px. Any SVG icon set works the same way (Tabler, Phosphor, Remix, Hugeicons); icon fonts do not get the auto-sizing. No emoji as UI.

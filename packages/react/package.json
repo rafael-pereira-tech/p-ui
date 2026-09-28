@@ -40,11 +40,13 @@
   "scripts": {
     "tokens": "node scripts/build-tokens.mjs",
     "build": "node scripts/build-tokens.mjs && tsup && node scripts/build-css.mjs",
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
   },
   "peerDependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-error-boundary": "^6.0.0"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
@@ -58,13 +60,20 @@
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.9.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "jsdom": "^29.0.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-error-boundary": "^6.1.0",
     "tailwindcss": "^4.3.0",
     "tsup": "^8.5.0",
-    "typescript": "~5.9.0"
+    "typescript": "~5.9.0",
+    "vitest": "^4.1.0"
   },
   "publishConfig": {
     "access": "restricted"
@@ -73,5 +82,10 @@
     "type": "git",
     "url": "git+https://github.com/rafael-pereira-tech/p-ui.git",
     "directory": "packages/react"
+  },
+  "peerDependenciesMeta": {
+    "react-error-boundary": {
+      "optional": true
+    }
   }
 }

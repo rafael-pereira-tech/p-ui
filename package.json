@@ -13,8 +13,9 @@
     "typecheck": "pnpm -r typecheck",
     "tokens": "pnpm --filter @p-ui/react tokens",
     "ds": "pnpm --filter @p-ui/react build && node scripts/build-ds.mjs",
-    "check": "pnpm lint && pnpm build && pnpm typecheck && node scripts/build-ds.mjs",
-    "registry": "node scripts/build-registry.mjs"
+    "check": "pnpm lint && pnpm build && pnpm typecheck && pnpm test && node scripts/build-ds.mjs",
+    "registry": "node scripts/build-registry.mjs",
+    "test": "pnpm --filter @p-ui/react test"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.0",

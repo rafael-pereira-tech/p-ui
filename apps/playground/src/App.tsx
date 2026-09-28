@@ -22,7 +22,7 @@ import cards from "./examples/cards.json"
 import { TokensPage } from "./TokensPage"
 import { ACCENTS, THEMES, useHashRoute, useThemeState, type Accent, type ThemeId } from "./theme"
 
-type Card = { group: string; height: number; width?: number; page?: boolean; subtitle?: string }
+type Card = { group: string; height: number; width?: number; page?: boolean; subtitle?: string; kit?: boolean }
 const CARDS = cards as Record<string, Card>
 
 const modules = import.meta.glob<{ default: React.ComponentType }>("./examples/*.tsx", { eager: true })
@@ -32,7 +32,7 @@ const EXAMPLES: Record<string, React.ComponentType> = Object.fromEntries(
 
 // Full-page layouts render on their own route instead of inside a card.
 const LAYOUTS = ["Sidebar", "SiteHeader"] as const
-const GROUP_ORDER = ["Actions", "Forms", "Navigation", "Overlays", "Display", "Feedback"]
+const GROUP_ORDER = ["Actions", "Forms", "Navigation", "Overlays", "Display", "Feedback", "Kit"]
 
 function ThemeControls({ stacked = false }: { stacked?: boolean }) {
   const { theme, setTheme, accent, setAccent } = React.useContext(ThemeCtx)
@@ -93,7 +93,7 @@ function ComponentsPage() {
       <div className="flex flex-col gap-2">
         <h1 className="text-4xl font-extrabold tracking-tight text-balance">Components</h1>
         <p className="text-xl text-muted-foreground">
-          All {Object.keys(EXAMPLES).length - 2} p-ui components, live. Switch theme and accent in the header.
+          All {Object.keys(EXAMPLES).length - LAYOUTS.length} p-ui components and app-kit pieces, live. Switch theme and accent in the header.
         </p>
       </div>
       {groups.map(({ group, names }) => (

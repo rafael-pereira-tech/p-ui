@@ -127,6 +127,7 @@ const previewPlugin = {
 }
 try {
   for (const [name, c] of Object.entries(cards)) {
+    if (c.kit) continue // app-kit previews are not part of the design-system artifact yet
     let src = path.join(EX, name + ".tsx")
     if (c.patch) {
       let s = fs.readFileSync(src, "utf8")
@@ -213,4 +214,4 @@ write("../libraries.json", JSON.stringify([
   { name: "react", version: reactVersion, global: "React", file: "components/lib/react.production.min.js" },
   { name: "react-dom", version: reactVersion, global: "ReactDOM", file: "components/lib/react-dom.production.min.js" },
 ], null, 2) + "\n")
-console.log(`design-system/out/project: ${files.length} files from ${repo}@${sha} (${componentNames.length} components, ${Object.keys(cards).length} previews)`)
+console.log(`design-system/out/project: ${files.length} files from ${repo}@${sha} (${componentNames.length} components, ${Object.values(cards).filter((c) => !c.kit).length} previews)`)

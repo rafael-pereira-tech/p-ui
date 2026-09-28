@@ -20,13 +20,13 @@ const NAMESPACE = "@p-ui"
 const HOMEPAGE = "https://rafael-pereira-tech.github.io/p-ui/"
 const SCHEMA_ITEM = "https://ui.shadcn.com/schema/registry-item.json"
 const SCHEMA_REGISTRY = "https://ui.shadcn.com/schema/registry.json"
-const NPM_DEPS = ["@base-ui/react", "cmdk", "sonner", "next-themes", "lucide-react", "class-variance-authority", "cn"]
+const NPM_DEPS = ["@base-ui/react", "cmdk", "sonner", "next-themes", "lucide-react", "class-variance-authority", "cn", "react-error-boundary"]
 const DOC_NAME = { sonner: "Toaster" }
 
 const pascal = (name) => DOC_NAME[name] ?? name.split("-").map((s) => s[0].toUpperCase() + s.slice(1)).join("")
 
-function docMeta(name) {
-  const file = path.join(ROOT, "docs/components", `${pascal(name)}.md`)
+function docMeta(name, dir = "docs/components") {
+  const file = path.join(ROOT, dir, `${pascal(name)}.md`)
   if (!fs.existsSync(file)) return { title: pascal(name), description: "" }
   const lines = fs.readFileSync(file, "utf8").split("\n")
   const title = (lines[0] ?? "").replace(/^#\s*/, "").trim() || pascal(name)
@@ -49,10 +49,17 @@ function componentSource(src) {
 function hookSource(src) {
   return src.replace(/from "\.\/([a-z-]+)"/g, 'from "@/hooks/$1"')
 }
+// app-kit: siblings live in components/, primitives in components/ui/.
+function kitSource(src) {
+  return src
+    .replace(/from "\.\.\/components\/([a-z-]+)"/g, 'from "@/components/ui/$1"')
+    .replace(/from "\.\.\/hooks\/([a-z-]+)"/g, 'from "@/hooks/$1"')
+    .replace(/from "\.\/([a-z-]+)"/g, 'from "@/components/$1"')
+}
 
 function registryDeps(src) {
   const deps = new Set()
-  for (const m of src.matchAll(/from "@\/(?:components\/ui|hooks)\/([a-z-]+)"/g)) deps.add(`${NAMESPACE}/${m[1]}`)
+  for (const m of src.matchAll(/from "@\/(?:components\/ui|components|hooks)\/([a-z-]+)"/g)) deps.add(`${NAMESPACE}/${m[1]}`)
   return [...deps].sort()
 }
 
@@ -145,6 +152,31 @@ function buildComponents() {
     })
 }
 
+function buildKit() {
+  const dir = path.join(PKG, "src/kit")
+  if (!fs.existsSync(dir)) return []
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".tsx"))
+    .sort()
+    .map((file) => {
+      const name = file.replace(/\.tsx$/, "")
+      const content = kitSource(fs.readFileSync(path.join(dir, file), "utf8"))
+      const { title, description } = docMeta(name, "docs/kit")
+      return {
+        $schema: SCHEMA_ITEM,
+        name,
+        type: "registry:component",
+        title,
+        description,
+        categories: ["app-kit"],
+        dependencies: npmDeps(content),
+        registryDependencies: registryDeps(content),
+        files: [{ path: `registry/p-ui/components/${file}`, type: "registry:component", content }],
+      }
+    })
+}
+
 function buildHooks() {
   const dir = path.join(PKG, "src/hooks")
   const titles = { "use-mobile": "useIsMobile", "use-media-query": "useMediaQuery" }
@@ -168,7 +200,7 @@ function buildHooks() {
     })
 }
 
-const items = [buildStyle(), ...buildComponents(), ...buildHooks()]
+const items = [buildStyle(), ...buildComponents(), ...buildKit(), ...buildHooks()]
 fs.rmSync(OUT, { recursive: true, force: true })
 fs.mkdirSync(OUT, { recursive: true })
 for (const item of items) fs.writeFileSync(path.join(OUT, `${item.name}.json`), JSON.stringify(item, null, 2) + "\n")
