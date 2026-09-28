@@ -2,3 +2,4 @@ node_modules/
 dist/
 design-system/out/
 .DS_Store
+apps/playground/public/r/
